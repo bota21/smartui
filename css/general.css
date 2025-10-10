@@ -1,0 +1,15 @@
+.text_bold {
+  font-weight: 600;
+}
+.text_center {
+  text-align: center;
+}
+
+@media (max-width: 868px) {
+  .m_font_size_10 {
+    font-size: 10px;
+  }
+  .m_text_justify {
+    text-align: justify;
+  }
+}

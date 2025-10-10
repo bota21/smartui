@@ -1,0 +1,146 @@
+/* === Общие стили ===
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f7f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+} */
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+  gap: 40px;
+}
+
+/* === Секции (wrapper_group) === */
+.wrapper_group {
+  background: linear-gradient(180deg, #ffffff 0%, #f9f9fc 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+}
+
+.wrapper_group:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Заголовки категорий */
+.group_header {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.group_header::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #7a00ff, #b200ff);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* === Блоки внутри секций === */
+.group_blocks_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.group_block {
+  background: #f9f9fc;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+  cursor: pointer;
+  transform: translateY(0);
+}
+
+.group_block:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Подзаголовки */
+.group_block_header {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #5a00cc;
+}
+
+/* Список элементов */
+.group_block_content_text {
+  font-size: 15px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  color: #415167;
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.group_block_content_text:hover {
+  color: #5a00cc;
+}
+.group_block_content_text:last-child {
+  border-bottom: none;
+}
+.group_block_content_dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 10px;
+  background: #7a00ff;
+  font-weight: bold;
+  margin-right: 8px;
+}
+footer {
+  background: none;
+}
+
+/* === Адаптив === */
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .group_blocks_wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .group_header {
+    font-size: 22px;
+  }
+
+  .group_block_header {
+    font-size: 17px;
+  }
+
+  .group_block_content_text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .group_block {
+    padding: 24px;
+  }
+  .group_block_header {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,223 @@
+.content {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px 10px 0 10px;
+}
+.container_for_tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.smart_home_tabs {
+  display: flex;
+  align-items: center;
+  padding: 15px 28px;
+  background: #dadada;
+  margin-right: 1px;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+  font-weight: 600;
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px,
+    rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px,
+    rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+}
+.tab_active {
+  background-color: #ffffff;
+  border-left: 1px solid #dadada;
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.5) -3px -3px 8px, inset rgba(255, 255, 255, 0.9) 3px 3px 8px,
+    rgba(0, 0, 0, 0.8) 3px 3px 8px -3px;
+  box-shadow: inset rgba(0, 0, 0, 0.5) -3px -3px 8px, inset rgba(255, 255, 255, 0.9) 3px 3px 8px,
+    rgba(0, 0, 0, 0.8) 3px 3px 8px -3px;
+}
+.wrapper_for_smart_home_tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.wrapper_for_smart_home_content {
+  padding: 20px 20px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f5f5f5;
+  width: 100%;
+}
+.wrapper_for_smart_home_content,
+.wrapper_for_smart_home_item_1,
+.wrapper_for_smart_home_item_2,
+.wrapper_for_smart_home_item_3,
+.wrapper_for_smart_home_item_4,
+.wrapper_for_smart_home_item_5,
+.wrapper_for_smart_home_item_6,
+.wrapper_for_smart_home_item_7,
+.wrapper_for_smart_home_item_8,
+.wrapper_for_smart_home_item_9,
+.wrapper_for_smart_home_item_10 {
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.tabs_for_smart_home_items {
+  width: 20%;
+  margin-right: 10px;
+  max-height: 500px; /* ограничиваем высоту */
+  overflow-y: auto; /* вертикальная прокрутка */
+  padding-left: 2px;
+}
+.tabs_for_smart_home_item_1,
+.tabs_for_smart_home_item_2,
+.tabs_for_smart_home_item_3,
+.tabs_for_smart_home_item_4,
+.tabs_for_smart_home_item_5,
+.tabs_for_smart_home_item_6,
+.tabs_for_smart_home_item_7,
+.tabs_for_smart_home_item_8,
+.tabs_for_smart_home_item_9,
+.tabs_for_smart_home_item_10 {
+  padding: 10px 7px;
+  cursor: pointer;
+}
+.tab_item_active {
+  background: #9e21ff;
+  color: #f9fbff;
+  border-radius: 0 3px 3px 0;
+}
+.wrapper_for_smart_home_items {
+  width: 80%;
+}
+.image_tab {
+  float: right;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+}
+.text_tab {
+  line-height: 160%;
+  text-indent: 30px;
+}
+.bold_text {
+  font-weight: 550;
+}
+.italic-text {
+  font-style: italic;
+}
+.price_tab {
+  margin-top: 20px;
+  font-weight: 700;
+}
+.wrapper_for_images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.images_in_wrapper {
+  width: 300px;
+  height: 300px;
+}
+footer {
+  background: #f5f5f5;
+  padding: 20px;
+  margin: 0 10px 10px 10px;
+  font-size: 14px;
+}
+.footer_info_price {
+  font-style: italic;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1280px) {
+  .smart_home_tabs {
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 1061px) {
+  .smart_home_tabs {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .smart_home_tabs {
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 868px) {
+  body {
+    font-size: 12px;
+  }
+  .wrapper_logo_text {
+    font-size: 20px;
+  }
+  .container_for_tabs {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .smart_home_tabs {
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 14px;
+    width: 43%;
+    border-radius: 5px;
+    -webkit-box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px,
+      rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+    box-shadow: inset rgba(0, 0, 0, 0.6) 0 -3px 8px, inset rgba(252, 255, 255, 0.7) 0 3px 8px,
+      rgba(0, 0, 0, 0.8) 0 3px 8px -3px;
+  }
+
+  .wrapper_for_smart_home_tabs {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .wrapper_for_smart_home_content {
+    padding: 10px 10px 10px 0;
+    border-radius: 3px 3px 0 0;
+  }
+
+  .tabs_for_smart_home_items {
+    width: 45%;
+    max-height: 600px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .wrapper_for_smart_home_items {
+    width: 100%;
+  }
+  .tabs_for_smart_home_item_1,
+  .tabs_for_smart_home_item_2,
+  .tabs_for_smart_home_item_3,
+  .tabs_for_smart_home_item_4,
+  .tabs_for_smart_home_item_5,
+  .tabs_for_smart_home_item_6,
+  .tabs_for_smart_home_item_7,
+  .tabs_for_smart_home_item_8,
+  .tabs_for_smart_home_item_9,
+  .tabs_for_smart_home_item_10 {
+    padding: 7px;
+  }
+  .image_tab,
+  .images_in_wrapper {
+    width: 70%;
+    height: auto;
+    float: none;
+    margin: 0 auto 20px auto;
+    display: block;
+  }
+}

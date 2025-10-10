@@ -1,0 +1,214 @@
+header {
+  padding: 10px 10px 0px 20px;
+}
+.content {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  height: 400px;
+  border-radius: 3px 3px 0 0;
+}
+.main_content {
+  background: #f5f5f5;
+  color: #000;
+  border-radius: 5px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px 0;
+  margin: 0 10px;
+  opacity: 1; /* важно — без анимации всё видно */
+  filter: blur(0);
+}
+
+.main_content.animate {
+  animation: contentWrapper 7s ease-in-out forwards; /* ✅ запускается только при первом заходе */
+}
+
+@keyframes contentWrapper {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+    max-height: 0;
+    overflow: hidden;
+  }
+  40% {
+    opacity: 0;
+    filter: blur(0);
+    max-height: 0;
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    max-height: 200vh;
+  }
+}
+.main_logo_wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(58, 23, 178, 1) 0%, rgba(143, 26, 204, 1) 50%);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.main_logo_wrapper.animate {
+  animation: logoWrapper 7s ease-in-out forwards; /* добавляем только при первом заходе */
+}
+
+.main_logo {
+  width: 450px;
+  height: 304px;
+  margin-top: 80px;
+  opacity: 1;
+}
+
+.main_logo_wrapper.animate .main_logo {
+  animation: pixelAppear 7s ease-in-out forwards;
+}
+
+/* Фон исчезает постепенно, но первые 3 секунды остаётся */
+@keyframes logoWrapper {
+  0% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  40% {
+    opacity: 1; /* 40% от 7s ≈ 2.8 сек — фон остаётся */
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(4px);
+    display: none;
+  }
+}
+
+/* Логотип остаётся в нормальном размере и только потом уменьшается */
+@keyframes pixelAppear {
+  0% {
+    opacity: 1;
+    transform: scale(1); /* сразу нормальный размер */
+    filter: blur(0);
+  }
+  40% {
+    opacity: 1; /* держим его чётким первые ~3 сек */
+    transform: scale(1);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.8); /* уменьшаем к концу */
+    filter: blur(2px); /* лёгкое размытие при уменьшении */
+  }
+}
+.main_text_wrapper {
+  width: 90%;
+  padding: 60px 0;
+  margin: 0px auto;
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 30px;
+  font-size: 19px;
+  color: #415167;
+  background-image: url("../assets/logo/Shanyrak.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main_icons_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+.main_icon_img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.main_icon_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 180px;
+  color: #000;
+  border-radius: 5px;
+  border: 1px solid #c5b3ff;
+  padding: 10px;
+  line-height: 20px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: #415167;
+  background: #ffffff;
+  box-shadow: inset rgba(0, 0, 0, 0.2) -3px -3px 8px, inset rgba(255, 255, 255, 0.85) 3px 3px 8px,
+    rgba(0, 0, 0, 0.15) 3px 3px 10px, rgba(255, 255, 255, 0.6) -3px -3px 10px;
+}
+
+.main_icon_wrapper:hover {
+  box-shadow: 0 4px 10px 1px rgba(110, 33, 255, 0.1);
+}
+.main_icon {
+  display: block;
+  color: #415167;
+}
+.main_icon_line {
+  width: 70%;
+  border-bottom: 2px solid #6321ff;
+  margin: 10px auto 10px auto;
+}
+.main_icon_text {
+  display: flex;
+  text-align: center;
+}
+
+@media (max-width: 868px) {
+  body {
+    font-size: 14px;
+  }
+  .main_logo {
+    width: 330px;
+    height: 220px;
+    margin-top: 70px;
+  }
+
+  .main_text_wrapper {
+    width: 90%;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 0;
+  }
+  .main_icon_text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .main_icons_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0 0 0;
+  }
+  .main_icon_wrapper:hover {
+    box-shadow: inset rgba(0, 0, 0, 0.5) -3px -3px 8px, inset rgba(255, 255, 255, 0.9) 3px 3px 8px,
+      rgba(0, 0, 0, 0.8) 3px 3px 8px -3px;
+  }
+  .main_icon_wrapper:checked {
+    box-shadow: 0 4px 10px 1px rgba(110, 33, 255, 0.1);
+  }
+  .main_icon_img {
+    margin: 0 0 10px 0;
+    width: 25px;
+    height: 25px;
+  }
+  .main_icon_wrapper {
+    width: 80%;
+    height: 120px;
+  }
+  .main_icon_line {
+    margin: 0px;
+    margin-bottom: 5px;
+  }
+}
