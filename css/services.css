@@ -7,12 +7,18 @@
   padding: 30px;
   border-radius: 20px;
   background: linear-gradient(180deg, #ffffff 0%, #f9f9fc 100%);
+  display: flex;
+  flex-direction: column;
 }
 .cards_wrapper:first-child {
   margin-right: 50px;
 }
 .card_wrapper {
   background: #f9f9fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
   font-size: 16px;
   text-indent: 25px;
   padding: 20px;
@@ -42,6 +48,7 @@
 .card_wrapper_content {
   line-height: 25px;
   text-align: justify;
+  flex-grow: 1;
 }
 .card_wrapper_blocks_title {
   text-indent: 0;
@@ -49,6 +56,7 @@
 .card_wrapper_content_list {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding: 4px 0 4px 0;
+  text-indent: 0;
 }
 .card_wrapper_content_list::before,
 .card_wrapper_block_list::before {

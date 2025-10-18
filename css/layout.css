@@ -31,6 +31,29 @@ header {
   align-items: end;
   font-weight: 600;
 }
+.lang-switcher {
+  position: absolute;
+  top: 35px;
+  right: 100px;
+}
+.lang-switcher-button {
+  background: none;
+  border: 1px solid #ccc;
+  margin-left: 5px;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #eee;
+}
+
+.lang-switcher button:hover {
+  background: #eee;
+  color: #415167;
+}
+.lang-switcher-button.active {
+  background: #eee;
+  color: #415167;
+}
 .header_wrapper_contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,7 +104,7 @@ footer {
   border-radius: 0 0 3px 3px;
 }
 .footer_back_main {
-  width: 100px;
+  width: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,10 +121,10 @@ footer {
 }
 
 .footer_back_main:hover {
+  width: 170px;
   color: white;
   background-image: linear-gradient(to right, #5e2bff 0%, #8d4dff 50%, #5e2bff 100%);
   background-position: right center;
-  border: none;
 }
 @media (max-width: 868px) {
   body {
@@ -109,6 +132,14 @@ footer {
   }
   header {
     padding: 10px 10px 0px 10px;
+  }
+  .lang-switcher {
+    top: 15px;
+    right: 65px;
+  }
+  .lang-switcher button {
+    font-size: 12px;
+    padding: 2px;
   }
   .header_wrapper_contacts {
     font-size: 10px;

@@ -1,0 +1,47 @@
+const translations = {
+  kz: {
+    Feedback: "Байланыс",
+    welcome_title: "Қош келдіңіз!",
+    welcome_intro: '"SmartÜi" компаниясы Алиса Смарт үйін интеграциялау қызметтерін ұсынады.',
+    welcome_text:
+      "Мұнда сіз үйіңізді жайлы және өміріңізді жайлы ету үшін қажет нәрсенің бәрін таба аласыз. Біздің каталогты қараңыз, біз ұсынатын қызметтерді қараңыз, тарифтерді салыстырыңыз және бәрі қалай жұмыс істейтінін көру үшін портфолионы қараңыз. Біз сізге ең жақсысын таңдауға және алғашқы қадамды мүмкіндігінше қарапайым етуге көмектесу үшін осындамыз. Толық кеңес алу үшін көрсетілген байланыстар бойынша хабарласуыңызды сұраймыз. Біздің менеджерлер сізге егжей-тегжейлі кеңес береді.",
+    packages: "Пакеттер",
+    packages_intro: "Барлық қол жетімді опцияларды зерттеп, тапсырмаларыңыздың оңтайлы шешімін табыңыз.",
+    catalog: "Каталог",
+    catalog_intro: "Сізге қажет нәрсенің бәрін бір жерден табыңыз-ыңғайлы және жылдам.",
+    services: "Қызметтер",
+    services_intro: "Бізге сеніңіз-біз сіз үшін бәрін орнатамыз, қосамыз және жасаймыз.",
+    portfolio: "Портфолио",
+    portfolio_intro: "Барлығы қалай жұмыс істейтінін бірнеше минут ішінде біліңіз-көрнекі және қарапайым.",
+  },
+  ru: {
+    Feedback: "Обратная связь",
+    welcome_title: "Добро пожаловать!",
+    welcome_intro: 'Уважаемый клиент, наша компания "SmartÜi" предоставляет услуги по интеграции Умного дома Алиса.',
+    welcome_text:
+      "Здесь вы найдёте всё, что нужно, чтобы сделать ваш дом удобнее и жизнь комфортнее. Ознакомьтесь с нашим каталогом, посмотрите какие услуги мы предлагаем, сравните тарифы и загляните в портфолио, чтобы наглядно увидеть, как всё работает. Мы здесь, чтобы помочь вам выбрать лучшее и сделать первый шаг максимально просто. Для подробной консультации просим связаться по указанным контактам. Наши менеджеры обязательно предоставят Вам подробную консультацию.",
+    packages: "Пакеты",
+    packages_intro: "Изучите все доступные варианты и найдите оптимальное решение для ваших задач.",
+    catalog: "Каталог",
+    catalog_intro: "Найдите всё необходимое в одном месте — удобно и быстро.",
+    services: "Услуги",
+    services_intro: "Доверьтесь нам — мы настроим, подключим и сделаем всё за вас.",
+    portfolio: "Портфолио",
+    portfolio_intro: "Узнайте, как всё работает, за пару минут — наглядно и просто.",
+  },
+  en: {
+    Feedback: "Feedback",
+    welcome_title: "Welcome!",
+    welcome_intro: 'Dear customer, our company "SmartÜi" provides smart home integration with Alice.',
+    welcome_text:
+      "Here you will find everything you need to make your home more comfortable and your life more comfortable. Check out our catalog, see what services we offer, compare rates, and take a look at our portfolio to see how everything works. We are here to help you choose the best and make the first step as easy as possible. For a detailed consultation, please contact the specified contacts. Our managers will provide you with detailed advice.",
+    packages: "Packages",
+    packages_intro: "Explore all the available options and find the optimal solution for your tasks.",
+    catalog: "Catalog",
+    catalog_intro: "Find everything you need in one place — conveniently and quickly.",
+    services: "Services",
+    services_intro: "Trust us — we will set up, connect and do everything for you.",
+    portfolio: "Portfolio",
+    portfolio_intro: "Find out how everything works in a couple of minutes — visually and simply.",
+  },
+};

@@ -10,59 +10,96 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/translation-services.js"></script>
+    <script src="js/lang.js"></script>
     <title>SmartÜi</title>
   </head>
 
   <body>
     <header class="header">
+      <div class="lang-switcher">
+        <button class="lang-switcher-button" data-lang="kz">KZ</button>
+        <button class="lang-switcher-button" data-lang="ru">RU</button>
+        <button class="lang-switcher-button" data-lang="en">EN</button>
+      </div>
       <div class="header_wrapper_contacts">
-        Обратная связь
+        <span data-i18n="Feedback">Обратная связь</span>
         <a href="tel:+77778410050" class="header_contact_phone header_img_contact"></a>
         <a target="_blank" href="https://wa.me/77778410050" class="header_contact_whatsapp header_img_contact"></a>
         <a target="_blank" href="https://t.me/+77778410050" class="header_contact_telegram header_img_contact"></a>
       </div>
-      <a href="https://bota21.github.io/smart-home" class="logo_img"></a>
+      <a href="./index.html" class="logo_img"></a>
     </header>
     <div class="content">
       <div class="cards_wrapper">
         <div class="card_wrapper">
-          <div class="card_wrapper_header">Каждый месяц с заботой</div>
-          <div class="card_wrapper_content">
+          <div class="card_wrapper_header" data-i18n="Month_header_title">Каждый месяц с заботой</div>
+          <div class="card_wrapper_content" data-i18n="Month_header_text">
             Это ежемесячная подписка на регулярное обслуживание вашего умного дома. Мы берём на себя все мелкие, но
             важные задачи, чтобы техника всегда работала без перебоев, а вы могли наслаждаться комфортом и удобством.
             <br />
             <br />
-            <p class="card_wrapper_blocks_title">Что входит в обслуживание:</p>
-            <p class="card_wrapper_content_list">Замена батареек в датчиках, пультах и других устройствах.</p>
-            <p class="card_wrapper_content_list">Настройка слетевших устройств и восстановление их подключения.</p>
-            <p class="card_wrapper_content_list">Проверка стабильности системы и оптимизация работы оборудования.</p>
-            <p class="card_wrapper_content_list">Обновление настроек и сценариев при необходимости.</p>
-            <p class="card_wrapper_content_list">Поддержка и консультация по всем вопросам работы умного дома.</p>
+            <p class="card_wrapper_blocks_title" data-i18n="Month_included_service">Что входит в обслуживание:</p>
+            <p class="card_wrapper_content_list" data-i18n="Month_replacing batteries">
+              Замена батареек в датчиках, пультах и других устройствах.
+            </p>
+            <p class="card_wrapper_content_list" data-i18n="Month_configuring_crashed_devices">
+              Настройка слетевших устройств и восстановление их подключения.
+            </p>
+            <p class="card_wrapper_content_list" data-i18n="Month_checking_system_stability">
+              Проверка стабильности системы и оптимизация работы оборудования.
+            </p>
+            <p class="card_wrapper_content_list" data-i18n="Month_updating_settings_and_scripts">
+              Обновление настроек и сценариев при необходимости.
+            </p>
+            <p class="card_wrapper_content_list" data-i18n="Month_support_and_advice">
+              Поддержка и консультация по всем вопросам работы умного дома.
+            </p>
           </div>
-          <div class="card_wrapper_footer text_bold">Стоимость 10000 тг/мес</div>
+          <div class="card_wrapper_footer text_bold">
+            <span data-i18n="Cost">Стоимость</span>
+            10000
+            <span data-i18n="tenge_month">тг/мес</span>
+          </div>
         </div>
       </div>
       <div class="cards_wrapper">
         <div class="card_wrapper">
-          <div class="card_wrapper_header">Разовое решение задачи</div>
-          <div class="card_wrapper_content">
+          <div class="card_wrapper_header" data-i18n="One_time_header_title">Разовое решение задачи</div>
+          <div class="card_wrapper_content" data-i18n="One_time_header_text">
             Идеальный вариант, если вам нужна помощь здесь и сейчас — без обязательств и подписок. Мы быстро и
             профессионально решим конкретную проблему с вашим умным домом, чтобы всё работало как надо.
           </div>
-          <div class="card_wrapper_blocks_title">Предлагаем следующие услуги:</div>
+          <div class="card_wrapper_blocks_title" data-i18n="One_time_included_service">
+            Предлагаем следующие услуги:
+          </div>
           <div class="card_wrapper_blocks">
             <div class="card_wrapper_block">
-              <div class="card_wrapper_block_list">Установка датчика</div>
-              <div class="card_wrapper_block_list">Установка клапана перекрытия</div>
-              <div class="card_wrapper_block_list">Установка умного карниза</div>
+              <div class="card_wrapper_block_list" data-i18n="One_time_installing_sensor">Установка датчика</div>
+              <div class="card_wrapper_block_list" data-i18n="One_time_installing_close">
+                Установка клапана перекрытия
+              </div>
+              <div class="card_wrapper_block_list" data-i18n="One_time_installing_smart_cornice">
+                Установка умного карниза
+              </div>
             </div>
             <div class="card_wrapper_block">
-              <div class="card_wrapper_block_price">2000тг</div>
-              <div class="card_wrapper_block_price">3000тг</div>
-              <div class="card_wrapper_block_price">10000тг</div>
+              <div class="card_wrapper_block_price">
+                2000
+                <span data-i18n="tenge">тг</span>
+              </div>
+              <div class="card_wrapper_block_price">
+                3000
+                <span data-i18n="tenge">тг</span>
+              </div>
+              <div class="card_wrapper_block_price">
+                10000
+                <span data-i18n="tenge">тг</span>
+              </div>
             </div>
           </div>
-          <div class="card_wrapper_footer text_bold">
+          <div class="card_wrapper_footer text_bold" data-i18n="One_time_footer">
             Мы настроим нужные сценарии в рамках услуги — без дополнительных расходов
           </div>
         </div>
@@ -70,7 +107,7 @@
     </div>
 
     <footer>
-      <a href="index.html" class="footer_back_main">Назад</a>
+      <a href="index.html" class="footer_back_main" data-i18n="Back">На главную страницу</a>
     </footer>
   </body>
 </html>
