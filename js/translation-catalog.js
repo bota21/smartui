@@ -105,6 +105,7 @@ const translations = {
     Sensor_Human_presence_Aqara_FP2: "Aqara Presence Sensor FP2 адамның қатысуын анықтайтын датчик",
     Sensor_Human_presence_Roximo: "ROXIMO SWHPS08 қатысу және жарық датчигі",
     Sensor_Human_presence_24G: "24G Zigbee адамның қатысуын анықтайтын датчик",
+    Sensor_Human_presence_Navigator: "Navigator қатысу датчигі",
     Sensor_move_Yandex: "Yandex қозғалыс датчигі",
     Sensor_move_Aqara: "Aqara Motion Sensor қозғалыс датчигі",
     Sensor_move_Sber: "SBER қозғалыс датчигі",
@@ -114,6 +115,7 @@ const translations = {
     Sensor_temperature_Kojimo: "Kojimo температура мен ылғалдылық датчигі",
     Sensor_temperature_Sonoff: "Sonoff температура мен ылғалдылық датчигі",
     Sensor_air_Aqara: "Aqara TVOC ауа сапасы монитор датчигі",
+    Sensor_air_QingPing: "QingPing ауа сапасын бақылау құрылғысы Lite",
     Sensor_water_Yandex: "Yandex су ағу датчигі",
     Sensor_water_Sonoff: "Sonoff су ағу датчигі",
     Sensor_water_Aqara: "Aqara Water Leak Sensor T1 су ағу датчигі",
@@ -152,6 +154,8 @@ const translations = {
       "Қатысу датчигі адамның датчик зонасында бар-жоғын анықтайды. Датчик баптауларында қашықтық пен сезгіштікті орнатуға болады. Құрылғыда жарық датчигі де бар, оны түрлі сценарийлерге қолдануға болады — мысалы, жарық төмен болса жарықты қосу. Оңай монтаж үшін комплекте жабысқ adhesive‑ленген кронштейн бар. Датчик қабырғаға немесе төбеге орнатылады, пайдалану шарттарына байланысты.",
     Sensor_Human_presence_24G_text:
       "24G микротолқынды қатысу радарының жаңартылған нұсқасы — адамның қатысуын дәлірек анықтайтын радар. Бұл төмен қуатты нұсқа: алдымен адамның инфрақызыл арқылы анықтайды. Қозғалысты, статикалық анықтауды (тыныс, жеңіл қозғалыс) анықтай алады. Қосымша автоматизация сценарийлерін толықтырады.",
+    Sensor_Human_presence_Navigator_text:
+      "Navigator NSH-SNR-M01-WiFi сымсыз инфрақызыл қозғалыс (қатысу) датчигі бақыланатын аймақта қозғалысты анықтау үшін инфрақызыл сәулелену көздерінің (адамдар, жылы қанды жануарлар) қозғалысын қадағалауға арналған. Датчик Navigator SmartHome мобильді қосымшасы арқылы Интернет желісімен қашықтан бақылау және ескерту функцияларымен жабдықталған. Сымсыз байланыс үй желісіндегі Wi-Fi маршрутизаторы арқылы Wi-Fi арнасы бойынша жүзеге асырылады.",
     sensor_move_text:
       "Қозғалысты анықтайды және жарық сценарийлерін іске қосады. Немесе бөлмеде адам бар екенін хабарлайды. Сымсыз шағын датчикті тұрғын үйде, подъезде, ваннада, бөлмелерде немесе лоджияда — кез келген жерде орнатуға болады. Датчикті ақылды үй құрылғыларымен байланыстырып, «Дом с Алисой» қосымшасында көптеген ыңғайлы сценарийлер құрыңыз. Мысалы, холлда жарық автоматты түрде қосылады. Жарық бос тұрғанда сөніп қоюға да болады. Қосымшада пуш‑хабарламаларды баптау оңай — үйде қозғалыс болса, хабар аласыз. Датчикті Қызмет хабына Zigbee протоколымен қосу қажет.",
     Sensor_move_Aqara_text:
@@ -177,6 +181,18 @@ const translations = {
     Sensor_air_Aqara_text_2: "TVOC мониторингі: датчик ауадағы TVOC концентрациясын өлшейді.",
     Sensor_air_Aqara_text_3:
       "TVOC – адам денсаулығына зиян келтіруі мүмкін газдар тобы. Температура мен ылғалдылық мониторингі: датчик бөлмедегі температура мен ылғалдылықты да өлшейді. Датчик батареямен жұмыс істейді, қайта қуаттаусыз шамамен бір жыл жұмыс істей алады.",
+    Sensor_air_QingPing_text_1:
+      "Intelligent CO2 Air Quality Monitor, Temperature and Humidity Monitor, PM2.5 PM10 5-in-1 Lite compatible with Apple HomeKit. Equipped with an OLED display, it can charge a 2000 mAh battery providing up to 7 hours of operation. Get real-time data on PM2.5, PM10, CO2, temperature, and indoor humidity. Supports 2.4 GHz Wi-Fi and Bluetooth for remote data viewing or historical data export. For Apple Home app users, you can remotely check all five indicators or set up automation via Home Hub. Pixel-style UI design with a wider viewing angle and more engaging interaction.",
+    Sensor_air_QingPing_text_2:
+      "• Apple HomeKit Compatibility: Apple Home app users can remotely check five indicators or automate settings via Apple Home Hub.",
+    Sensor_air_QingPing_text_3:
+      "• 5-in-1 multifunctional: real-time monitoring of PM2.5, PM10, CO2, indoor temperature, and humidity.",
+    Sensor_air_QingPing_text_4:
+      "• Long-lasting rechargeable lithium battery: built-in 2000 mAh lithium battery provides up to 7 hours of working time.",
+    Sensor_air_QingPing_text_5:
+      "• Clear OLED display: pixel-style UI design, wider viewing angle, and more interesting operation.",
+    Sensor_air_QingPing_text_6:
+      "• Smart connectivity: supports 2.4 GHz Wi-Fi and Bluetooth for remote data viewing or exporting historical data.",
     Sensor_water_Yandex_text:
       "Сымсыз шағын датчикті ас немесе ванна еденіне оңай орнатуға болады. Су табылса дереу хабарлайды, сіз тез жауап бере аласыз және жағымсыз тосын жағдайлардың алдын аласыз. «Дом с Алисой» қосымшасында пуш‑хабарламаларды баптаңыз. Датчикті ақылды розеткаларға байланыстырып, протечка болғанда құрылғыларды өшіру сценарийін орнатыңыз, судың өту клапанын жауып тастаңыз.",
     Sensor_water_Sonoff_text:
@@ -1070,6 +1086,7 @@ const translations = {
     Sensor_Human_presence_Aqara_FP2: "Датчик присутствия Aqara Presence Sensor FP2",
     Sensor_Human_presence_Roximo: "Датчик присутствия и освещенности ROXIMO SWHPS08",
     Sensor_Human_presence_24G: "Датчик присутствия 24G Zigbee",
+    Sensor_Human_presence_Navigator: "Датчик присутствия Navigator ",
     Sensor_move_Yandex: "Датчик движения Яндекс",
     Sensor_move_Aqara: "Датчик движения Aqara Motion Sensor",
     Sensor_move_Sber: "Датчик движения SBER",
@@ -1079,6 +1096,7 @@ const translations = {
     Sensor_temperature_Kojimo: "Датчик температуры и влажности Kojimo",
     Sensor_temperature_Sonoff: "Датчик температуры и влажности Sonoff",
     Sensor_air_Aqara: "Датчик качества воздуха Aqara TVOC Air Quality Monitor",
+    Sensor_air_QingPing: "Монитор качества воздуха QingPing Air Monitor Lite",
     Sensor_water_Yandex: "Датчик протечки воды Яндекс",
     Sensor_water_Sonoff: "Датчик протечки воды Sonoff",
     Sensor_water_Aqara: " Датчик протечки Aqara Water Leak Sensor T1",
@@ -1117,6 +1135,8 @@ const translations = {
       "Датчик присутствия определят находится ли в данный момент человек в поле обнаружения датчика. В настройках датчика можно установить параметры расстояния и чувствительности. Также в устройстве присутствует датчик освещенности, который так же можно использовать для различных сценариев - например включать освещение при низком уровне освещенности. Для удобства монтажа в комплекте поставляется крепление на клейкой ленте. Установка датчика производится на стене или потолке, в зависимости от условий эксплуатации.",
     Sensor_Human_presence_24G_text:
       "Модернизированная версия радара 24G с микроволновым датчиком присутствия человека, радар для более точного обнаружения. Это версия с низким энергопотреблением, которая сначала обнаруживает людей с помощью инфракрасного обнаружения. Может обнаруживать обнаружение движения, статическое обнаружение (дыхание, незначительное движение). Дополняет больше сценариев автоматизации.",
+    Sensor_Human_presence_Navigator_text:
+      "Беспроводной инфракрасный датчик присутствия (движения) Navigator NSH-SNR-M01-WiFi предназначен для обнаружения движения в охраняемой зоне путем отслеживания перемещения источников инфракрасного излучения (люди, теплокровные животные). Датчик снабжен функцией дистанционного контроля и оповещения через сеть Интернет посредством мобильного приложения Navigator SmartHome. Беспроводное соединение датчика осуществляется по WI-FI каналу, с помощью WI-FI маршрутизатора (роутера) в домашней сети.",
     sensor_move_text:
       "Улавливает движение и запускает удобные сценарии освещения. Или передаёт, что в помещении кто-то есть.Беспроводной компактный датчик можно установить где угодно, в квартире или на даче: в прихожей, ванной, комнатах и даже на лоджии. Свяжите датчик с другими устройствами умного дома и создавайте множество удобных сценариев в приложении Дом с Алисой. Например, освещение в прихожей сможет включаться автоматически, когда вы вернётесь домой. А чтобы свет не горел зря, можно настроить его выключение при отсутствии движения. Также в приложении легко настроить пуш-уведомления — с ними вы всегда будете в курсе, например, если дома возникнет какое-то движение, пока вас нет. Для подключения датчика к Умному дому с Алисой нужна Станция, поддерживающая протокол Zigbee.",
     Sensor_move_Aqara_text:
@@ -1142,6 +1162,18 @@ const translations = {
     Sensor_air_Aqara_text_2: "Мониторинг TVOC: Датчик измеряет концентрацию TVOC в воздухе.",
     Sensor_air_Aqara_text_3:
       "TVOC – это группа газов, которые могут быть вредны для здоровья человека. Мониторинг температуры и влажности: датчик также измеряет температуру и влажность в помещении. Датчик работает от батареи и может проработать до года без подзарядки.",
+    Sensor_air_QingPing_text_1:
+      "Sensor_air_QingPing_text_1Интеллектуальный монитор качества воздуха CO2 Монитор температуры и влажности PM2.5 PM10 5 в 1 Lite Совместимый с OLED - дисплеем Apple HomeKit в режиме реального времени может заряжать аккумулятор емкостью 2000 мАч со временем работы до 7 часов. В режиме реального времени узнайте о PM2.5, PM10, CO2, температуре и влажности в помещении. Поддержка 2,4 ГГц Wi - Fi и BT для удаленного просмотра данных или экспорта исторических данных. Для пользователей домашнего приложения вы можете удаленно проверить пять индикаторов или настроить автоматизацию с помощью Home Hub. Дизайн UI в пиксельном стиле, с более широким углом зрения и более интересными операциями.",
+    Sensor_air_QingPing_text_2:
+      "• Совместимость с Apple HomeKit: Для пользователей приложения Apple Home можно удаленно проверить пять индикаторов или автоматизировать настройки с помощью Apple Home Hub.",
+    Sensor_air_QingPing_text_3:
+      "• 5 в 1 многофункциональный: мониторинг PM2.5, PM10, CO2, температуры и влажности в помещении в режиме реального времени.",
+    Sensor_air_QingPing_text_4:
+      "Долгосрочный зарядный литиевый аккумулятор: встроенный литиевый аккумулятор емкостью 2000 мАч со сроком службы до 7 часов.",
+    Sensor_air_QingPing_text_5:
+      "• Ясный OLED - дисплей: пиксельный дизайн UI, более широкий угол обзора, более интересная работа.",
+    Sensor_air_QingPing_text_6:
+      "• Интеллектуальное подключение: поддержка 2,4 ГГц Wi - Fi и BT для удаленного просмотра данных или экспорта исторических данных.",
     Sensor_water_Yandex_text:
       "Беспроводной компактный датчик легко установить на полу в кухне или в ванной. Он сразу сообщит, если обнаружит там воду, и вы сможете быстро отреагировать и избежать неприятных сюрпризов. Просто настройте пуш-уведомления в приложении Дом с Алисой. Свяжите датчик с умными розетками и создайте сценарий в приложении, по которому в случае протечки приборы в доме отключатся, а клапан, через который идёт вода, закроется.",
     Sensor_water_Sonoff_text:
@@ -2049,6 +2081,7 @@ const translations = {
     Sensor_Human_presence_Aqara_FP2: "Aqara Presence Sensor FP2",
     Sensor_Human_presence_Roximo: "ROXIMO Presence and Light Sensor",
     Sensor_Human_presence_24G: "24G Zigbee Presence Sensor",
+    Sensor_Human_presence_Navigator: "Navigator Presence Sensor",
     Sensor_move_Yandex: "Yandex Motion Sensor",
     Sensor_move_Aqara: "Aqara Motion Sensor",
     Sensor_move_Sber: "SBER Motion Sensor",
@@ -2058,6 +2091,7 @@ const translations = {
     Sensor_temperature_Kojimo: "Kojimo Temperature and Humidity Sensor",
     Sensor_temperature_Sonoff: "Sonoff Temperature and Humidity Sensor",
     Sensor_air_Aqara: "Aqara TVOC Air Quality Monitor",
+    Sensor_air_QingPing: "QingPing Air Quality Monitor Lite",
     Sensor_water_Yandex: "Yandex Water Leak Sensor",
     Sensor_water_Sonoff: "Sonoff Water Leak Sensor",
     Sensor_water_Aqara: "Aqara Water Leak Sensor T1",
@@ -2096,6 +2130,8 @@ const translations = {
       "The presence sensor determines whether a person is currently within its detection field. In sensor settings you can set distance and sensitivity parameters. The device also includes a light sensor which can be used for various scenarios — for example, turning on lighting when brightness is low. For convenience in mounting, adhesive mounting hardware is included. Installation is done on a wall or ceiling, depending on operating conditions.",
     Sensor_Human_presence_24G_text:
       "Upgraded 24G radar version with microwave human presence sensor for more accurate detection. This is a low‑power version which first detects people via infrared detection. It can detect motion, static detection (breathing, minimal movement). It complements more automation scenarios.",
+    Sensor_Human_presence_Navigator_text:
+      "The wireless infrared presence (motion) sensor Navigator NSH-SNR-M01-WiFi is designed to detect movement in a monitored area by tracking infrared radiation sources (people, warm-blooded animals). The sensor features remote monitoring and alert functions via the Internet through the Navigator SmartHome mobile app. The wireless connection is established over a Wi-Fi channel using a Wi-Fi router within the home network.",
     sensor_move_text:
       "Detects motion and triggers convenient lighting scenarios. Or communicates that someone is in the room. The wireless compact sensor can be installed anywhere: in the apartment, cottage, hall, bathroom, rooms, even on the loggia. Link the sensor with other smart home devices and create numerous convenient scenarios in the Home with Alice app. For example, the hallway lighting can turn on automatically when you return home. To prevent lights staying on unnecessarily, configure it to turn off when no motion is detected. It's easy to set up push notifications in the app — you'll always know if there's movement in the home while you’re away. A Zigbee protocol–compatible hub is required to connect the sensor to the smart home.",
     Sensor_move_Aqara_text:
@@ -2121,6 +2157,17 @@ const translations = {
     Sensor_air_Aqara_text_2: "TVOC monitoring: the sensor measures the concentration of TVOC in the air.",
     Sensor_air_Aqara_text_3:
       "TVOC is a group of gases that may be harmful to human health. Temperature and humidity monitoring: the sensor also measures room temperature and humidity. The sensor is battery-operated and can last up to a year without recharge.",
+    Sensor_air_QingPing_text_1:
+      "Ақылды CO2 ауа сапасын бақылау құрылғысы, температура мен ылғалдылықты өлшеуіш, PM2.5 және PM10 5-ке-1 Lite моделі Apple HomeKit-пен үйлесімді. OLED дисплейі бар, 2000 мА·сағ батареямен жабдықталған, 7 сағатқа дейін жұмыс істейді. PM2.5, PM10, CO2, температура және үй ішіндегі ылғалдылық туралы нақты уақыттағы деректерді көрсетеді. 2.4 ГГц Wi-Fi және Bluetooth арқылы қашықтан деректерді көру немесе тарихты экспорттау мүмкіндігі бар. Apple Home қолданушылары бес көрсеткішті қашықтан тексеріп, Home Hub арқылы автоматтандыру орната алады. Пиксельдік стильдегі UI дизайны кең көру бұрышымен және қызықты басқару тәсілімен ерекшеленеді.",
+    Sensor_air_QingPing_text_2:
+      "• Apple HomeKit-пен үйлесімділік: Apple Home қолданушылары бес көрсеткішті қашықтан тексеріп немесе Apple Home Hub арқылы автоматтандыру орната алады.",
+    Sensor_air_QingPing_text_3:
+      "• 5-ке-1 көпфункционалды құрылғы: PM2.5, PM10, CO2, температура және ылғалдылықты нақты уақытта бақылайды.",
+    Sensor_air_QingPing_text_4:
+      "• Ұзақ жұмыс істейтін литий батареясы: 2000 мА·сағ сыйымдылығы бар кіріктірілген литий батареясы 7 сағатқа дейін жұмыс істеуге мүмкіндік береді.",
+    Sensor_air_QingPing_text_5: "• Таза OLED дисплейі: пиксельдік UI дизайны, кең көру бұрышы және ыңғайлы басқару.",
+    Sensor_air_QingPing_text_6:
+      "• Ақылды қосылу мүмкіндігі: 2.4 ГГц Wi-Fi және Bluetooth арқылы қашықтан деректерді көру немесе тарихты экспорттау функциясын қолдайды.",
     Sensor_water_Yandex_text:
       "The wireless compact sensor is easy to install on the floor in the kitchen or bathroom. It instantly notifies you if water is detected, allowing you to respond quickly and avoid unpleasant surprises. Simply set up push notifications in the Home with Alice app. Link the sensor with smart plugs and create a scenario where, in case of leakage, appliances in the home will turn off and a water valve will shut off.",
     Sensor_water_Sonoff_text:
