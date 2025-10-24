@@ -182,17 +182,16 @@ const translations = {
     Sensor_air_Aqara_text_3:
       "TVOC – адам денсаулығына зиян келтіруі мүмкін газдар тобы. Температура мен ылғалдылық мониторингі: датчик бөлмедегі температура мен ылғалдылықты да өлшейді. Датчик батареямен жұмыс істейді, қайта қуаттаусыз шамамен бір жыл жұмыс істей алады.",
     Sensor_air_QingPing_text_1:
-      "Intelligent CO2 Air Quality Monitor, Temperature and Humidity Monitor, PM2.5 PM10 5-in-1 Lite compatible with Apple HomeKit. Equipped with an OLED display, it can charge a 2000 mAh battery providing up to 7 hours of operation. Get real-time data on PM2.5, PM10, CO2, temperature, and indoor humidity. Supports 2.4 GHz Wi-Fi and Bluetooth for remote data viewing or historical data export. For Apple Home app users, you can remotely check all five indicators or set up automation via Home Hub. Pixel-style UI design with a wider viewing angle and more engaging interaction.",
+      "Ақылды CO2 ауа сапасын бақылау құрылғысы, температура мен ылғалдылықты өлшеуіш, PM2.5 және PM10 5-ке-1 Lite моделі Apple HomeKit-пен үйлесімді. OLED дисплейі бар, 2000 мА·сағ батареямен жабдықталған, 7 сағатқа дейін жұмыс істейді. PM2.5, PM10, CO2, температура және үй ішіндегі ылғалдылық туралы нақты уақыттағы деректерді көрсетеді. 2.4 ГГц Wi-Fi және Bluetooth арқылы қашықтан деректерді көру немесе тарихты экспорттау мүмкіндігі бар. Apple Home қолданушылары бес көрсеткішті қашықтан тексеріп, Home Hub арқылы автоматтандыру орната алады. Пиксельдік стильдегі UI дизайны кең көру бұрышымен және қызықты басқару тәсілімен ерекшеленеді.",
     Sensor_air_QingPing_text_2:
-      "• Apple HomeKit Compatibility: Apple Home app users can remotely check five indicators or automate settings via Apple Home Hub.",
+      "• Apple HomeKit-пен үйлесімділік: Apple Home қолданушылары бес көрсеткішті қашықтан тексеріп немесе Apple Home Hub арқылы автоматтандыру орната алады.",
     Sensor_air_QingPing_text_3:
-      "• 5-in-1 multifunctional: real-time monitoring of PM2.5, PM10, CO2, indoor temperature, and humidity.",
+      "• 5-ке-1 көпфункционалды құрылғы: PM2.5, PM10, CO2, температура және ылғалдылықты нақты уақытта бақылайды.",
     Sensor_air_QingPing_text_4:
-      "• Long-lasting rechargeable lithium battery: built-in 2000 mAh lithium battery provides up to 7 hours of working time.",
-    Sensor_air_QingPing_text_5:
-      "• Clear OLED display: pixel-style UI design, wider viewing angle, and more interesting operation.",
+      "• Ұзақ жұмыс істейтін литий батареясы: 2000 мА·сағ сыйымдылығы бар кіріктірілген литий батареясы 7 сағатқа дейін жұмыс істеуге мүмкіндік береді.",
+    Sensor_air_QingPing_text_5: "• Таза OLED дисплейі: пиксельдік UI дизайны, кең көру бұрышы және ыңғайлы басқару.",
     Sensor_air_QingPing_text_6:
-      "• Smart connectivity: supports 2.4 GHz Wi-Fi and Bluetooth for remote data viewing or exporting historical data.",
+      "• Ақылды қосылу мүмкіндігі: 2.4 ГГц Wi-Fi және Bluetooth арқылы қашықтан деректерді көру немесе тарихты экспорттау функциясын қолдайды.",
     Sensor_water_Yandex_text:
       "Сымсыз шағын датчикті ас немесе ванна еденіне оңай орнатуға болады. Су табылса дереу хабарлайды, сіз тез жауап бере аласыз және жағымсыз тосын жағдайлардың алдын аласыз. «Дом с Алисой» қосымшасында пуш‑хабарламаларды баптаңыз. Датчикті ақылды розеткаларға байланыстырып, протечка болғанда құрылғыларды өшіру сценарийін орнатыңыз, судың өту клапанын жауып тастаңыз.",
     Sensor_water_Sonoff_text:
@@ -2158,16 +2157,17 @@ const translations = {
     Sensor_air_Aqara_text_3:
       "TVOC is a group of gases that may be harmful to human health. Temperature and humidity monitoring: the sensor also measures room temperature and humidity. The sensor is battery-operated and can last up to a year without recharge.",
     Sensor_air_QingPing_text_1:
-      "Ақылды CO2 ауа сапасын бақылау құрылғысы, температура мен ылғалдылықты өлшеуіш, PM2.5 және PM10 5-ке-1 Lite моделі Apple HomeKit-пен үйлесімді. OLED дисплейі бар, 2000 мА·сағ батареямен жабдықталған, 7 сағатқа дейін жұмыс істейді. PM2.5, PM10, CO2, температура және үй ішіндегі ылғалдылық туралы нақты уақыттағы деректерді көрсетеді. 2.4 ГГц Wi-Fi және Bluetooth арқылы қашықтан деректерді көру немесе тарихты экспорттау мүмкіндігі бар. Apple Home қолданушылары бес көрсеткішті қашықтан тексеріп, Home Hub арқылы автоматтандыру орната алады. Пиксельдік стильдегі UI дизайны кең көру бұрышымен және қызықты басқару тәсілімен ерекшеленеді.",
+      "Intelligent CO2 Air Quality Monitor, Temperature and Humidity Monitor, PM2.5 PM10 5-in-1 Lite compatible with Apple HomeKit. Equipped with an OLED display, it can charge a 2000 mAh battery providing up to 7 hours of operation. Get real-time data on PM2.5, PM10, CO2, temperature, and indoor humidity. Supports 2.4 GHz Wi-Fi and Bluetooth for remote data viewing or historical data export. For Apple Home app users, you can remotely check all five indicators or set up automation via Home Hub. Pixel-style UI design with a wider viewing angle and more engaging interaction.",
     Sensor_air_QingPing_text_2:
-      "• Apple HomeKit-пен үйлесімділік: Apple Home қолданушылары бес көрсеткішті қашықтан тексеріп немесе Apple Home Hub арқылы автоматтандыру орната алады.",
+      "• Apple HomeKit Compatibility: Apple Home app users can remotely check five indicators or automate settings via Apple Home Hub.",
     Sensor_air_QingPing_text_3:
-      "• 5-ке-1 көпфункционалды құрылғы: PM2.5, PM10, CO2, температура және ылғалдылықты нақты уақытта бақылайды.",
+      "• 5-in-1 multifunctional: real-time monitoring of PM2.5, PM10, CO2, indoor temperature, and humidity.",
     Sensor_air_QingPing_text_4:
-      "• Ұзақ жұмыс істейтін литий батареясы: 2000 мА·сағ сыйымдылығы бар кіріктірілген литий батареясы 7 сағатқа дейін жұмыс істеуге мүмкіндік береді.",
-    Sensor_air_QingPing_text_5: "• Таза OLED дисплейі: пиксельдік UI дизайны, кең көру бұрышы және ыңғайлы басқару.",
+      "• Long-lasting rechargeable lithium battery: built-in 2000 mAh lithium battery provides up to 7 hours of working time.",
+    Sensor_air_QingPing_text_5:
+      "• Clear OLED display: pixel-style UI design, wider viewing angle, and more interesting operation.",
     Sensor_air_QingPing_text_6:
-      "• Ақылды қосылу мүмкіндігі: 2.4 ГГц Wi-Fi және Bluetooth арқылы қашықтан деректерді көру немесе тарихты экспорттау функциясын қолдайды.",
+      "• Smart connectivity: supports 2.4 GHz Wi-Fi and Bluetooth for remote data viewing or exporting historical data.",
     Sensor_water_Yandex_text:
       "The wireless compact sensor is easy to install on the floor in the kitchen or bathroom. It instantly notifies you if water is detected, allowing you to respond quickly and avoid unpleasant surprises. Simply set up push notifications in the Home with Alice app. Link the sensor with smart plugs and create a scenario where, in case of leakage, appliances in the home will turn off and a water valve will shut off.",
     Sensor_water_Sonoff_text:
