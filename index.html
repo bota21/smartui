@@ -1,94 +1,190 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/logo/Shanyrak-violet.png" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/translation-index.js"></script>
-    <script src="js/lang.js"></script>
-    <script src="js/script.js"></script>
-    <title>SmartÜi</title>
+    <title>SmartUI — Умный дом с Алисой в Алматы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   </head>
-
   <body>
-    <div class="main_logo_wrapper">
-      <img src="./assets/logo/Shanyrak.png" alt="logo" class="main_logo" />
-    </div>
-    <header class="header">
-      <div class="lang-switcher">
-        <button class="lang-switcher-button" data-lang="kz">KZ</button>
-        <button class="lang-switcher-button" data-lang="ru">RU</button>
-        <button class="lang-switcher-button" data-lang="en">EN</button>
+    <header>
+      <div>SmartUI</div>
+      <div class="lang-switch">
+        <a onclick="setLang('ru')">RU</a>
+        <a onclick="setLang('kz')">KZ</a>
+        <a onclick="setLang('en')">EN</a>
       </div>
-      <div class="header_wrapper_contacts">
-        <span data-i18n="Feedback">Обратная связь</span>
-        <a href="tel:+77778410050" class="header_contact_phone header_img_contact"></a>
-        <a target="_blank" href="https://wa.me/77778410050" class="header_contact_whatsapp header_img_contact"></a>
-        <a target="_blank" href="https://t.me/+77778410050" class="header_contact_telegram header_img_contact"></a>
-      </div>
-      <a href="https://bota21.github.io/smart-home" class="logo_img"></a>
     </header>
-    <div class="content">
-      <div class="main_content">
-        <div class="main_text_wrapper">
-          <div class="text_bold text_center" data-i18n="welcome_title">Добро пожаловать!</div>
-          <p class="text_center m_text_justify" data-i18n="welcome_intro">
-            Уважаемый клиент, наша компания "SmartÜi" предоставляет услуги по интеграции Умного дома Алиса.
-          </p>
-          <p data-i18n="welcome_text">
-            Здесь вы найдёте всё, что нужно, чтобы сделать ваш дом удобнее и жизнь комфортнее. Ознакомьтесь с нашим
-            каталогом, посмотрите какие услуги мы предлагаем, сравните тарифы и загляните в портфолио, чтобы наглядно
-            увидеть, как всё работает. Мы здесь, чтобы помочь вам выбрать лучшее и сделать первый шаг максимально
-            просто. Для подробной консультации просим связаться по указанным контактам. Наши менеджеры обязательно
-            предоставят Вам подробную консультацию.
-          </p>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <div class="lang lang-ru active">
+          <h1>SmartUI — Умный дом с Алисой в Алматы</h1>
+          <p>Полностью интегрированная система умного дома для вашего комфорта и безопасности</p>
+          <div class="hero-buttons">
+            <a class="btn-primary" href="#form">Рассчитать стоимость</a>
+            <a class="btn-secondary" href="#contacts">Консультация</a>
+          </div>
         </div>
-        <div class="main_icons_wrapper">
-          <a href="packages.html" class="main_icon_wrapper">
-            <img src="./assets/icons/packages.png" alt="Пакеты" class="main_icon_img" />
-            <div class="main_icon text_bold" data-i18n="packages">Пакеты</div>
-            <div class="main_icon_line"></div>
-            <div class="main_icon_text" data-i18n="packages_intro">
-              Изучите все доступные варианты и найдите оптимальное решение для ваших задач.
-            </div>
-          </a>
-          <a href="catalog.html" class="main_icon_wrapper">
-            <img src="./assets/icons/catalog.png" alt="Каталог" class="main_icon_img" />
-            <div class="main_icon text_bold" data-i18n="catalog">Каталог</div>
-            <div class="main_icon_line"></div>
-            <div class="main_icon_text" data-i18n="catalog_intro">
-              Найдите всё необходимое в одном месте — удобно и быстро.
-            </div>
-          </a>
-          <a href="services.html" class="main_icon_wrapper">
-            <img src="./assets/icons/services.png" alt="Услуги" class="main_icon_img" />
-            <div class="main_icon text_bold" data-i18n="services">Услуги</div>
-            <div class="main_icon_line"></div>
-            <div class="main_icon_text" data-i18n="services_intro">
-              Доверьтесь нам — мы настроим, подключим и сделаем всё за вас.
-            </div>
-          </a>
-          <a href="portfolio.html" class="main_icon_wrapper">
-            <img src="./assets/icons/portfolio.png" alt="Портфолио" class="main_icon_img" />
-            <div class="main_icon text_bold" data-i18n="portfolio">Портфолио</div>
-            <div class="main_icon_line"></div>
-            <div class="main_icon_text" data-i18n="portfolio_intro">
-              Узнайте, как всё работает, за пару минут — наглядно и просто.
-            </div>
-          </a>
+        <div class="lang lang-kz">
+          <h1>SmartUI — Алиса арқылы смарт үй Алматыда</h1>
+          <p>Сіздің жайлылығыңыз бен қауіпсіздігіңізге арналған толық интеграцияланған смарт үй жүйесі</p>
+          <div class="hero-buttons">
+            <a class="btn-primary" href="#form">Бағаны есептеу</a>
+            <a class="btn-secondary" href="#contacts">Кеңес алу</a>
+          </div>
+        </div>
+        <div class="lang lang-en">
+          <h1>SmartUI — Smart Home with Alice in Almaty</h1>
+          <p>Fully integrated smart home system for your comfort and safety</p>
+          <div class="hero-buttons">
+            <a class="btn-primary" href="#form">Calculate Price</a>
+            <a class="btn-secondary" href="#contacts">Consultation</a>
+          </div>
         </div>
       </div>
+      <div class="hero-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="Alice Smart Home" />
+      </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="features">
+      <div class="feature-card lang lang-ru active">
+        <h3>Интеграция с Алисой</h3>
+        <p>Полное управление голосом для вашего дома</p>
+      </div>
+      <div class="feature-card lang lang-ru active">
+        <h3>Поддержка 24/7</h3>
+        <p>Мы всегда на связи для вашей безопасности</p>
+      </div>
+      <div class="feature-card lang lang-ru active">
+        <h3>Современные технологии</h3>
+        <p>Безопасность, автоматизация и комфорт</p>
+      </div>
+
+      <div class="feature-card lang lang-kz">
+        <h3>Алисаға интеграция</h3>
+        <p>Үйіңізді дауыс арқылы толық басқару</p>
+      </div>
+      <div class="feature-card lang lang-kz">
+        <h3>24/7 Қолдау</h3>
+        <p>Сіздің қауіпсіздігіңіз үшін біз әрдайым байланыстамыз</p>
+      </div>
+      <div class="feature-card lang lang-kz">
+        <h3>Заманауи технологиялар</h3>
+        <p>Қауіпсіздік, автоматтандыру және жайлылық</p>
+      </div>
+
+      <div class="feature-card lang lang-en">
+        <h3>Alice Integration</h3>
+        <p>Full voice control for your home</p>
+      </div>
+      <div class="feature-card lang lang-en">
+        <h3>24/7 Support</h3>
+        <p>We are always available for your safety</p>
+      </div>
+      <div class="feature-card lang lang-en">
+        <h3>Modern Technology</h3>
+        <p>Security, automation, and comfort</p>
+      </div>
+    </section>
+
+    <!-- ПАКЕТЫ -->
+    <section>
+      <h2 class="lang lang-ru center active">Наши пакеты</h2>
+      <h2 class="lang lang-kz center">Біздің пакеттер</h2>
+      <h2 class="lang lang-en center">Our Packages</h2>
+
+      <div class="cards">
+        <div class="card lang lang-ru active">
+          <h3>Базовый</h3>
+          <p>Свет, базовая автоматика, управление через приложение</p>
+        </div>
+        <div class="card lang lang-ru active">
+          <h3>Стандарт</h3>
+          <p>Базовый + голосовое управление через Алису</p>
+        </div>
+        <div class="card lang lang-ru active">
+          <h3>Премиум</h3>
+          <p>Полный умный дом под ключ + поддержка 24/7</p>
+        </div>
+        <div class="card lang lang-kz">
+          <h3>Базалық</h3>
+          <p>Жарық, негізгі автоматика, қолданба арқылы басқару</p>
+        </div>
+        <div class="card lang lang-kz">
+          <h3>Стандарт</h3>
+          <p>Базалық + Алиса арқылы дауыс басқару</p>
+        </div>
+        <div class="card lang lang-kz">
+          <h3>Премиум</h3>
+          <p>Толық смарт үй + 24/7 қолдау</p>
+        </div>
+        <div class="card lang lang-en">
+          <h3>Basic</h3>
+          <p>Light, basic automation, app control</p>
+        </div>
+        <div class="card lang lang-en">
+          <h3>Standard</h3>
+          <p>Basic + voice control via Alice</p>
+        </div>
+        <div class="card lang lang-en">
+          <h3>Premium</h3>
+          <p>Full smart home turnkey + 24/7 support</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФОРМА ЗАЯВКИ (Netlify) -->
+    <section id="form">
+      <h2 class="lang lang-ru center active">Оставьте заявку</h2>
+      <h2 class="lang lang-kz center">Өтініш қалдыру</h2>
+      <h2 class="lang lang-en center">Leave a request</h2>
+
+      <form name="smartui-form" method="POST" data-netlify="true">
+        <!-- обязательное скрытое поле для Netlify -->
+        <input type="hidden" name="form-name" value="smartui-form" />
+        <input type="text" name="name" placeholder="Ваше имя / Аты-жөні / Name" required />
+        <input type="tel" name="phone" placeholder="Телефон / Телефон / Phone" required />
+        <button type="submit">Отправить / Жіберу / Submit</button>
+      </form>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contacts">
+      <h2 class="lang lang-ru active">Контакты</h2>
+      <h2 class="lang lang-kz">Байланыс</h2>
+      <h2 class="lang lang-en">Contacts</h2>
+
+      <p class="lang lang-ru active">г. Алматы, Казахстан</p>
+      <p class="lang lang-kz">Алматы, Қазақстан</p>
+      <p class="lang lang-en">Almaty, Kazakhstan</p>
+    </section>
+
+    <!-- ПЛАВАЮЩАЯ КНОПКА -->
+    <div class="floating-contact">
+      <div class="floating-btn">💬 Связаться</div>
+      <div class="floating-menu">
+        <a href="tel:+77778410050" class="btn-primary">📞 Позвонить</a>
+        <a href="https://t.me/+77778410050" target="_blank" class="btn-primary">💬 Telegram</a>
+        <a href="https://wa.me/77778410050" target="_blank" class="btn-primary">🟢 WhatsApp</a>
+      </div>
     </div>
+
+    <script>
+      function setLang(lang) {
+        document.querySelectorAll(".lang").forEach((el) => {
+          el.classList.remove("active");
+          if (el.classList.contains("lang-" + lang)) el.classList.add("active");
+        });
+      }
+      document.querySelector(".floating-btn").addEventListener("click", function () {
+        const menu = document.querySelector(".floating-menu");
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      });
+    </script>
   </body>
 </html>

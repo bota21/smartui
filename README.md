@@ -1,3 +1,3 @@
-https://bota21.github.io/smart-home
+https://bota21.github.io/smartui
 
-https://smart-u-i.netlify.app/
+smart-ui-copy.netlify.app
