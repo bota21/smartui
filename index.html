@@ -148,7 +148,14 @@
         <!-- обязательное скрытое поле для Netlify -->
         <input type="hidden" name="form-name" value="smartui-form" />
         <input type="text" name="name" placeholder="Ваше имя / Аты-жөні / Name" required />
-        <input type="tel" name="phone" placeholder="Телефон / Телефон / Phone" required />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="+7 777 123 45 67"
+          pattern="^\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}$"
+          required
+          title="Введите полный номер, например +7 777 123 45 67"
+        />
         <button type="submit">Отправить / Жіберу / Submit</button>
       </form>
     </section>
@@ -184,6 +191,13 @@
       document.querySelector(".floating-btn").addEventListener("click", function () {
         const menu = document.querySelector(".floating-menu");
         menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      });
+
+      const phoneInput = document.querySelector('input[name="phone"]');
+      phoneInput.addEventListener("input", function (e) {
+        let x = e.target.value.replace(/\D/g, "").match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+        e.target.value =
+          "+7 " + (x[2] ? x[2] : "") + " " + (x[3] ? x[3] : "") + " " + (x[4] ? x[4] : "") + " " + (x[5] ? x[5] : "");
       });
     </script>
   </body>
