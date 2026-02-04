@@ -67,6 +67,7 @@ header {
 .btn-primary {
   background: var(--accent);
   color: white;
+  text-decoration: none;
 }
 .btn-primary:hover {
   background: #0ea5e9;
@@ -212,7 +213,19 @@ form button:hover {
 .floating-menu a:hover {
   background: #0ea5e9;
 }
-
+#contacts {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.contact-text {
+  margin-top: 10px;
+}
 .lang {
   display: none;
 }
