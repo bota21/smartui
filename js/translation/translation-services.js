@@ -7,6 +7,7 @@ const translations = {
     menu_portfolio: "Портфолио",
     floating_call: "📞 Хабарласу",
     floating_contact_us: "Байланысу",
+    recommended: "Ұсынылады",
     Month_header_title: "Ай сайын қамқорлықпен",
     Month_header_text:
       "Бұл — сіздің ақылды үйіңізге арналған тұрақты қызмет көрсетуге арналған ай сайынғы жазылым. Біз барлық ұсақ, бірақ маңызды тапсырмаларды өз мойнымызға аламыз, сонда техника үнемі үздіксіз жұмыс істейді, ал сіз жайлылық пен ыңғайлылықты сезінесіз.",
@@ -36,6 +37,7 @@ const translations = {
     menu_portfolio: "Портфолио",
     floating_call: "📞 Позвонить",
     floating_contact_us: "Связаться",
+    recommended: "Рекомендуем",
     Month_header_title: "Каждый месяц с заботой",
     Month_header_text:
       " Это ежемесячная подписка на регулярное обслуживание вашего умного дома. Мы берём на себя все мелкие, но важные задачи, чтобы техника всегда работала без перебоев, а вы могли наслаждаться комфортом и удобством.",
@@ -65,6 +67,7 @@ const translations = {
     menu_portfolio: "Portfolio",
     floating_call: "📞 Call us",
     floating_contact_us: "Contacts us",
+    recommended: "Recommended",
     Month_header_title: "Monthly with care",
     Month_header_text:
       "This is a monthly subscription for regular maintenance of your smart home. We take care of all the small but important tasks so that your equipment runs smoothly and you can enjoy comfort and convenience.",

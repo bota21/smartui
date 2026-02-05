@@ -119,28 +119,42 @@
 =============================== */
 
 .card_wrapper_blocks {
-  display: grid;
   grid-template-columns: 2fr 1fr;
 
   gap: 15px;
   margin-top: 15px;
 }
 
-/* Названия услуг */
+/* ===============================
+   SERVICES LIST
+=============================== */
 
-.card_wrapper_block_list {
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+.card_wrapper_blocks {
+  margin-top: 20px;
 }
 
-/* Цена */
+.service_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.card_wrapper_block_price {
-  padding: 12px 0;
+  padding: 14px 0;
 
-  text-align: right;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service_row:last-child {
+  border-bottom: none;
+}
+
+.service_name {
+  font-size: 16px;
+}
+
+.service_price {
   font-weight: 700;
   color: var(--accent);
+  white-space: nowrap;
 }
 
 /* ===============================
@@ -162,12 +176,14 @@
 }
 
 /* ===============================
-   MONTHLY PLAN BADGE
+   RECOMMENDED BADGE
 =============================== */
 
-.card_wrapper:first-child::before {
-  content: "Рекомендуем";
+.card_wrapper {
+  position: relative;
+}
 
+.card_badge {
   position: absolute;
   top: -12px;
   right: 25px;
@@ -180,6 +196,7 @@
 
   font-size: 12px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 /* ===============================
@@ -196,6 +213,15 @@
   }
 
   .card_wrapper_content {
+    font-size: 15px;
+  }
+  .service_row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .service_price {
     font-size: 15px;
   }
 

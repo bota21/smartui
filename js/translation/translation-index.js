@@ -28,7 +28,7 @@ const translations = {
     form_send: "Жіберу",
     form_name: "Аты-жөні",
     contact_header: "Байланыс",
-    contact_header: "Алматы, Қазақстан",
+    contact_address: "Алматы, Қазақстан",
   },
   ru: {
     menu_main: "Главная",
@@ -58,7 +58,7 @@ const translations = {
     form_header: "Оставьте заявку",
     form_send: "Отправить",
     contact_header: "Контакты",
-    contact_header: "г. Алматы, Казахстан",
+    contact_address: "г. Алматы, Казахстан",
   },
   en: {
     menu_main: "Main",
@@ -88,6 +88,6 @@ const translations = {
     form_header: "Leave a request",
     form_send: "Submit",
     contact_header: "Contacts",
-    contact_header: "Almaty, Kazakhstan",
+    contact_address: "Almaty, Kazakhstan",
   },
 };
