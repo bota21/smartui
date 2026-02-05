@@ -162,7 +162,11 @@ form button:hover {
   flex-direction: column;
   align-items: center;
 }
-.contact-header {
+.package-header {
+  margin-bottom: 20px;
+}
+.contact-header,
+.package-header {
   font-size: 1.5em;
   font-weight: bold;
 }
