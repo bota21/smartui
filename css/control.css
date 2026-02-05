@@ -72,7 +72,7 @@
   background: var(--card-bg);
   color: var(--text);
 
-  border-radius: 24px;
+  border-radius: 24px 24px 0 0;
   padding: 35px;
 
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
@@ -171,5 +171,8 @@
 
   .tabs_for_smart_home_items {
     padding-bottom: 10px;
+  }
+  .text_tab {
+    font-size: 14px;
   }
 }

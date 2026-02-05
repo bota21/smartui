@@ -42,10 +42,20 @@ header {
 .menu_logo_wrapper {
   display: flex;
 }
+footer {
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: 0 0 24px 24px;
+  font-style: oblique;
+}
 
 @media (max-width: 768px) {
   header {
     padding: 20px;
+  }
+
+  footer {
+    font-size: 12px;
   }
 }
 /* ===============================
