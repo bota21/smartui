@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/catalog-tabs.css" />
     <title>SmartUI — Умный дом с Алисой в Алматы</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/lang.js"></script>
-    <script src="../js/translation/translation-index.js"></script>
+    <script src="../js/catalog-tabs.js"></script>
+    <script src="../js/translation/translation-curtain.js"></script>
   </head>
 
   <body>
@@ -25,11 +27,11 @@
 
         <!-- Mobile Menu -->
         <nav class="mobile-menu" id="mobileMenu">
-          <a href="index.html">Главная</a>
-          <a href="catalog.html">Каталог</a>
-          <a href="packages.html">Пакеты</a>
-          <a href="services.html">Услуги</a>
-          <a href="portfolio.html">Портфолио</a>
+          <a data-i18n="menu_main" href="../index.html">Главная</a>
+          <a data-i18n="menu_catalog" href="../catalog.html">Каталог</a>
+          <a data-i18n="menu_packages" href="../packages.html">Пакеты</a>
+          <a data-i18n="menu_services" href="../services.html">Услуги</a>
+          <a data-i18n="menu_portfolio" href="../portfolio.html">Портфолио</a>
         </nav>
 
         <div>SmartÜi</div>
@@ -40,7 +42,801 @@
         <a data-lang="en" class="lang-switcher-button">EN</a>
       </div>
     </header>
-    <!-- Основные табы -->
-    <section class="content"></section>
+
+    <section class="content">
+      <div class="wrapper_for_smart_home_tabs">
+        <div class="wrapper_for_smart_home_content" data-tab="0">
+          <div class="tabs_for_smart_home_items">
+            <div class="tabs_for_smart_home_item" data-tab="1" data-i18n="Cornice_Yandex_3">
+              Умный карниз для штор Яндекс, длина 1,8-3 м
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="2" data-i18n="Cornice_Yandex_4">
+              Умный карниз для штор Яндекс, длина 2,4-4,5 м
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="3" data-i18n="Cornice_Tuya_4">Карниз умный Tuya 4м</div>
+            <div class="tabs_for_smart_home_item" data-tab="4" data-i18n="Cornice_Tuya_5">Карниз умный Tuya 5м</div>
+            <div class="tabs_for_smart_home_item" data-tab="5" data-i18n="Cornice_Tuya_6">Карниз умный Tuya 6м</div>
+            <div class="tabs_for_smart_home_item" data-tab="6" data-i18n="Cornice_Tuya_7">Карниз умный Tuya 7м</div>
+            <div class="tabs_for_smart_home_item" data-tab="7" data-i18n="Cornice_Aqara_175">Карниз Aqara 175см</div>
+            <div class="tabs_for_smart_home_item" data-tab="8" data-i18n="Cornice_Aqara_210">Карниз Aqara 210см</div>
+            <div class="tabs_for_smart_home_item" data-tab="9" data-i18n="Cornice_Aqara_250">Карниз Aqara 250см</div>
+            <div class="tabs_for_smart_home_item" data-tab="10" data-i18n="Controller_Curtain_Aqara">
+              Мотор для раздвижных штор Aqara Curtain Controller
+            </div>
+            <div class="tabs_for_smart_home_item m_font_size_10" data-tab="11" data-i18n="Driver_Curtain_Aqara_track">
+              Мотор раздвижных штор Aqara Curtain Driver E1 (Track Version)
+            </div>
+            <div class="tabs_for_smart_home_item m_font_size_10" data-tab="12" data-i18n="Driver_Curtain_Aqara_rod">
+              Мотор раздвижных штор Aqara Curtain Driver E1 (Rod Version)
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="13" data-i18n="Motor_Roller_Tuya">
+              Мотор для роллштор Tuya
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="14" data-i18n="Motor_Roller_Aqara">
+              Мотор для роллштор Aqara
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="15" data-i18n="Cornice_Roll_59">
+              Карниз для роллштор 59см
+            </div>
+            <div class="tabs_for_smart_home_item m_font_size_10" data-tab="16" data-i18n="Motor_Rolling_Aqara">
+              Мотор для рулонных штор Aqara Curtain Rolling Shutter Motor
+            </div>
+          </div>
+          <div class="wrapper_for_smart_home_items">
+            <div class="wrapper_for_smart_home_item" data-tab="1">
+              <img
+                src="../assets/img/5-cornice/Электрокарниз Яндекс 1.8.png"
+                alt="Электрокарниз Яндекс 1.8"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Cornice_Yandex_3_text_1">
+                  Умный карниз Яндекса — это удобное решение для управления шторами. Установите его в гостиной, спальне
+                  или детской и создайте атмосферу для крепкого здорового сна и лёгкого пробуждения. Благодаря
+                  телескопической конструкции карниз подойдёт для окон разных размеров — от 180 см до 300 см, а
+                  управлять шторами можно разными удобными способами.
+                </span>
+                <p data-i18n="Cornice_Yandex_text_2">
+                  Уникальный бесщёточный мотор обеспечивает плавную, бесшумную работу без вибраций, чтобы вы могли
+                  просыпаться от мягкого солнечного света, а не от шума открывающихся штор. Мотор долговечен¹ и
+                  потребляет мало энергии, а его мощности хватит, чтобы двигать даже тяжёлые шторы весом до 50 кг.
+                </p>
+                <p data-i18n="Cornice_Yandex_text_3">
+                  Голосом: объедините умный карниз с Яндекс Станцией и управляйте шторами с помощью голосовых команд.
+                  Также можно задавать степень открытия штор: «Алиса, открой шторы на 80%».
+                </p>
+                <p data-i18n="Cornice_Yandex_text_4">
+                  В приложении и с помощью сценариев: создавайте удобные сценарии с другими умными устройствами².
+                  Например, соедините умный карниз и датчик освещения, чтобы шторы закрывались вечером, когда вы
+                  включите свет в комнате. Также в приложении Дом с Алисой можно выбрать любую из 3 скоростей движения
+                  штор.
+                </p>
+                <p data-i18n="Cornice_Yandex_text_5">
+                  По расписанию: задайте время, когда хотите, чтобы в комнату попадал свет с улицы, а когда — нет. Или
+                  активируйте режимы Рассвета и Заката: тогда карниз будет синхронизировать открытие и закрытие штор с
+                  часами, когда солнце в вашем регионе встаёт и садится.
+                </p>
+                <p data-i18n="Cornice_Yandex_text_6">
+                  Вручную: можете привычно задвигать и раздвигать шторы. Просто дотроньтесь, задайте направление, и
+                  благодаря доводчику шторы сами продолжат движение.
+                </p>
+                <p data-i18n="Cornice_Yandex_text_7">
+                  Мотор раздвигает шторы одновременно в обе стороны от центра. Подходит для классического оформления
+                  окна двумя шторами. Механизм не подойдёт, если у вас только одна широкая штора.
+                </p>
+                <p data-i18n="Cornice_Yandex_text_8">
+                  Конструкция карниза однорядная: одна направляющая для одного полотна ткани. Для того, чтобы оформить
+                  окно классически и шторой, и тюлью, необходимо установить два карниза параллельно.
+                </p>
+                <p data-i18n="Cornice_Yandex_text_9">
+                  Комплектация: В комплект входят компактный мотор, карниз с регулируемой длиной и специальный набор для
+                  его крепления к потолку или к стенам.
+                </p>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Tuya,
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                123 200
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="2">
+              <img
+                src="../assets/img/5-cornice/Электрокарниз Яндекс 2.5.png"
+                alt="Электрокарниз Яндекс 2.5"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Cornice_Yandex_4_text_1">
+                  Умный карниз Яндекса — это удобное решение для управления шторами. Установите его в гостиной, спальне
+                  или детской и создайте атмосферу для крепкого здорового сна и лёгкого пробуждения. Благодаря
+                  телескопической конструкции карниз подойдёт для окон разных размеров — от 240 см до 450 см, а
+                  управлять шторами можно разными удобными способами.
+                </span>
+                <p data-i18n="Cornice_Yandex_text_2">
+                  Уникальный бесщёточный мотор обеспечивает плавную, бесшумную работу без вибраций, чтобы вы могли
+                  просыпаться от мягкого солнечного света, а не от шума открывающихся штор. Мотор долговечен¹ и
+                  потребляет мало энергии, а его мощности хватит, чтобы двигать даже тяжёлые шторы весом до 50 кг.
+                </p>
+                <p data-i18n="Cornice_Yandex_text_3">
+                  Голосом: объедините умный карниз с Яндекс Станцией и управляйте шторами с помощью голосовых команд.
+                  Также можно задавать степень открытия штор: «Алиса, открой шторы на 80%».
+                </p>
+                <p data-i18n="Cornice_Yandex_text_4">
+                  В приложении и с помощью сценариев: создавайте удобные сценарии с другими умными устройствами².
+                  Например, соедините умный карниз и датчик освещения, чтобы шторы закрывались вечером, когда вы
+                  включите свет в комнате. Также в приложении Дом с Алисой можно выбрать любую из 3 скоростей движения
+                  штор.
+                </p>
+                <p data-i18n="Cornice_Yandex_text_5">
+                  По расписанию: задайте время, когда хотите, чтобы в комнату попадал свет с улицы, а когда — нет. Или
+                  активируйте режимы Рассвета и Заката: тогда карниз будет синхронизировать открытие и закрытие штор с
+                  часами, когда солнце в вашем регионе встаёт и садится.
+                </p>
+                <p data-i18n="Cornice_Yandex_text_6">
+                  Вручную: можете привычно задвигать и раздвигать шторы. Просто дотроньтесь, задайте направление, и
+                  благодаря доводчику шторы сами продолжат движение.
+                </p>
+                <p data-i18n="Cornice_Yandex_text_7">
+                  Мотор раздвигает шторы одновременно в обе стороны от центра. Подходит для классического оформления
+                  окна двумя шторами. Механизм не подойдёт, если у вас только одна широкая штора.
+                </p>
+                <p data-i18n="Cornice_Yandex_text_8">
+                  Конструкция карниза однорядная: одна направляющая для одного полотна ткани. Для того, чтобы оформить
+                  окно классически и шторой, и тюлью, необходимо установить два карниза параллельно.
+                </p>
+                <p data-i18n="Cornice_Yandex_text_9">
+                  Комплектация: В комплект входят компактный мотор, карниз с регулируемой длиной и специальный набор для
+                  его крепления к потолку или к стенам.
+                </p>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                116 800
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="3">
+              <img
+                src="../assets/img/5-cornice/карниз Tuya.png"
+                alt="карниз 4м"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Cornice_Tuya_text_1">
+                  Электродвигатель с поддержкой беспроводной Протокол связи Zigbee позволяет выполнять сценарий умного
+                  дома без необходимости прямого подключения к интернету или Wifi. Это одно из ключевых преимуществ
+                  технологии Zigbee. Возможно управление с помощью пульта управления, через приложение и с через колонку
+                  Алиса.
+                  <p data-i18n="Cornice_Tuya_text_2">Комплектация: Телескопический карниз, электродвигатель, ПДУ</p>
+                </span>
+                <p data-i18n="Cornice_Tuya_text_2">Комплектация: Телескопический карниз, электродвигатель, ПДУ</p>
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Tuya.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Tuya,
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="wrapper_for_images_many">
+                <img
+                  src="../assets/img/5-cornice/Комплект карниза Tuya.png"
+                  alt="Комплект карниза Tuya"
+                  class="images_in_wrapper"
+                  onclick="toggleZoom(this)"
+                />
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                84 000
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="4">
+              <img
+                src="../assets/img/5-cornice/карниз Tuya.png"
+                alt="карниз 5м"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Cornice_Tuya_text_1">
+                  Электродвигатель с поддержкой беспроводной Протокол связи Zigbee позволяет выполнять сценарий умного
+                  дома без необходимости прямого подключения к интернету или Wifi. Это одно из ключевых преимуществ
+                  технологии Zigbee. Возможно управление с помощью пульта управления, через приложение и с через колонку
+                  Алиса.
+                </span>
+                <p data-i18n="Cornice_Tuya_text_2">Комплектация: Телескопический карниз, электродвигатель, ПДУ</p>
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Tuya.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Tuya,
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="wrapper_for_images_many">
+                <img
+                  src="../assets/img/5-cornice/Комплект карниза Tuya.png"
+                  alt="Комплект карниза Tuya"
+                  class="images_in_wrapper"
+                  onclick="toggleZoom(this)"
+                />
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                91 000
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="5">
+              <img
+                src="../assets/img/5-cornice/карниз Tuya.png"
+                alt="карниз 6м"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Cornice_Tuya_text_1">
+                  Электродвигатель с поддержкой беспроводной Протокол связи Zigbee позволяет выполнять сценарий умного
+                  дома без необходимости прямого подключения к интернету или Wifi. Это одно из ключевых преимуществ
+                  технологии Zigbee. Возможно управление с помощью пульта управления, через приложение и с через колонку
+                  Алиса.
+                </span>
+                <p data-i18n="Cornice_Tuya_text_2">Комплектация: Телескопический карниз, электродвигатель, ПДУ</p>
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Tuya.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Tuya,
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="wrapper_for_images_many">
+                <img
+                  src="../assets/img/5-cornice/Комплект карниза Tuya.png"
+                  alt="Комплект карниза Tuya"
+                  class="images_in_wrapper"
+                  onclick="toggleZoom(this)"
+                />
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                100 100
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="6">
+              <img
+                src="../assets/img/5-cornice/карниз Tuya.png"
+                alt="карниз 7м"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Cornice_Tuya_text_1">
+                  Электродвигатель с поддержкой беспроводной Протокол связи Zigbee позволяет выполнять сценарий умного
+                  дома без необходимости прямого подключения к интернету или Wifi. Это одно из ключевых преимуществ
+                  технологии Zigbee. Возможно управление с помощью пульта управления, через приложение и с через колонку
+                  Алиса.
+                </span>
+                <p data-i18n="Cornice_Tuya_text_2">Комплектация: Телескопический карниз, электродвигатель, ПДУ</p>
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Tuya.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Tuya,
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="wrapper_for_images_many">
+                <img
+                  src="../assets/img/5-cornice/Комплект карниза Tuya.png"
+                  alt="Комплект карниза Tuya"
+                  class="images_in_wrapper"
+                  onclick="toggleZoom(this)"
+                />
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                112 000
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="7">
+              <img
+                src="../assets/img/5-cornice/Электрокарниз Aqara.png"
+                alt="Электрокарниз Aqara 175"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Cornice_Aqara_175_text">
+                  Телескопический карниз AQARA MT-M01D предназначен для автоматизации управления шторами в вашем доме.
+                  Его длина регулируется от 1,75 до 3 метров, что позволяет адаптировать его под различные размеры
+                  оконных проемов. Карниз AQARA MT-M01D обеспечивает плавное и бесшумное движение штор, добавляя комфорт
+                  и удобство в управление освещением и приватностью вашего помещения. Мотор для раздвижных штор не
+                  входит в комплект.
+                </span>
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Aqara.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Aqara
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                23 100
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="8">
+              <img
+                src="../assets/img/5-cornice/Электрокарниз Aqara.png"
+                alt="Электрокарниз Aqara 210"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Cornice_Aqara_210_text">
+                  Телескопический карниз AQARA MT-M01D предназначен для автоматизации управления шторами в вашем доме.
+                  Его длина регулируется от 2,1 до 3,6 метров, что позволяет адаптировать его под различные размеры
+                  оконных проемов.Карниз AQARA MT-M01D обеспечивает плавное и бесшумное движение штор, добавляя комфорт
+                  и удобство в управление освещением и приватностью вашего помещения. Мотор для раздвижных штор не
+                  входит в комплект.
+                </span>
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Aqara.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Aqara
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                25 200
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="9">
+              <img
+                src="../assets/img/5-cornice/Электрокарниз Aqara.png"
+                alt="Электрокарниз Aqara 250"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Cornice_Aqara_250_text">
+                  Телескопический карниз AQARA MT-M01D предназначен для автоматизации управления шторами в вашем доме.
+                  Его длина регулируется от 2,5 до 4,5 метров, что позволяет адаптировать его под различные размеры
+                  оконных проемов. Мотор для раздвижных штор не входит в комплект.
+                </span>
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Aqara.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Aqara
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                32 200
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="10">
+              <img
+                src="../assets/img/5-cornice/Мотор для раздвижных штор  Aqara Curtain Controller.png"
+                alt="/Мотор для раздвижных штор  Aqara Curtain Controller"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Controller_Curtain_Aqara_text_1">
+                  Мотор для раздвижных штор Aqara Curtain Controller – это компактное и функциональное устройство,
+                  которое позволяет автоматизировать управление вашими шторами с помощью смартфона или голосовых команд.
+                  Он легко интегрируется в вашу существующую экосистему умного дома Aqara, делая вашу жизнь более
+                  комфортной и стильной.
+                </span>
+                <p data-i18n="Controller_Curtain_Aqara_text_2">
+                  Наслаждайтесь плавным и тихим движением штор без ненужного шума. Мотор автоматически останавливается
+                  при встрече с препятствием, обеспечивая безопасность ваших штор и мебели. Создавайте различные режимы
+                  работы штор для разных ситуаций, например, режим “День”, “Ночь” или “Кино”. Совместим с различными
+                  типами штор и карнизов. Легко установить с помощью входящих в комплект креплений и инструментов.
+                </p>
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Aqara.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Aqara
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                77 000
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="11">
+              <img
+                src="../assets/img/5-cornice/Мотор раздвижных штор Aqara Curtain Driver E1.png"
+                alt="Мотор раздвижных штор Aqara Curtain Driver E1"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Driver_Curtain_Aqara_track_text_1">
+                  Сделать обычные шторы умными — ещё проще. Устройство подходит почти для любого типа карниза.
+                </span>
+                <p data-i18n="Driver_Curtain_Aqara_track_text_2">
+                  Крепится на карниз и крючки. Под каждую штору — одно устройство.
+                </p>
+                <p data-i18n="Driver_Curtain_Aqara_track_text_3">
+                  Длина крючка (от низа крючка до карниза): 16 – 25 мм
+                </p>
+                <p data-i18n="Driver_Curtain_Aqara_track_text_4">Ширина карниза: 10 мм</p>
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Aqara.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Aqara
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - Zigbee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="From_the_battery">Oт аккумулятора</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                65 800
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="12">
+              <img
+                src="../assets/img/5-cornice/Мотор раздвижных штор  Aqara Curtain Driver E1 (Rod Version).png"
+                alt="Мотор раздвижных штор  Aqara Curtain Driver E1 (Rod Version)"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Driver_Curtain_Aqara_rod_text_1">
+                  Это умный привод для автоматического открытия и закрытия штор, разработанный для установки на шторные
+                  карнизы-стержни. Устройство позволяет управлять шторами дистанционно через смартфон, по расписанию или
+                  с помощью голосовых команд, интегрируясь в популярные экосистемы умного дома.
+                </span>
+                <p data-i18n="Driver_Curtain_Aqara_rod_text_2">
+                  Прочный корпус и качественные материалы гарантируют долговечность работы. Умный привод для штор Aqara
+                  — это шаг к полной автоматизации домашнего пространства, повышению комфорта и энергоэффективности.
+                </p>
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Aqara.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Aqara
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - Zigbee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="From_the_battery">Oт аккумулятора</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                75 600
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="13">
+              <img
+                src="../assets/img/5-cornice/Мотор для роллштор Tuya.png"
+                alt="Мотор для роллштор Tuya"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Motor_Roller_Tuya_text_1">
+                  Умный привод рольставней Zigbee, управляйте своими новыми умными жалюзи, добавляя моторизованные шторы
+                  непосредственно в свой умный дом с помощью бесплатного приложения для смартфона или интуитивно
+                  понятной сенсорной функции.
+                </span>
+                <p data-i18n="Motor_Roller_Tuya_text_2">
+                  Голосовое управление: поддержка голосового управления Alexa/Google Home/Alice. Установите время
+                  включения и выключения в соответствии с вашими предпочтениями, включение на рассвете и выключение на
+                  закате. Умный мотор для рольставней прост в эксплуатации, подходит для детей и пожилых людей, прост в
+                  эксплуатации, удобен для семейного использования. Двигатель рольставен вы можете открывать/закрывать
+                  шторы вручную даже при отсутствии питания.
+                </p>
+                <p data-i18n="Motor_Roller_Tuya_text_3">
+                  Поддержка регулировки скорости работы Мотор поддерживает высокую скорость, среднюю скорость, низкую
+                  скорость, 3 скорости регулировки, что делает ваш дом умнее.
+                </p>
+                <p data-i18n="Motor_Roller_Tuya_text_4">
+                  Можно установить верхний и нижний пределы. Верхнюю и нижнюю точки штор можно задать с помощью пульта
+                  дистанционного управления или приложения. Совместимо с любыми шторами/жалюзи с петлями для шнура или
+                  цепочками с бусинами (пластиковыми или металлическими). Установка своими руками занимает всего 5
+                  минут, а стоит вдвое дешевле, что делает эти умные жалюзи лучшим выбором для автоматизации
+                  штор/жалюзи. Функция блокировки от детей может предотвратить использование устройства детьми.
+                  Убедитесь, что ваш дом «умный» и безопасный.
+                </p>
+                <span data-i18n="Motor_Roller_Tuya_text_5">Комплектация:</span>
+                -
+                <span data-i18n="Motor_Roller_Tuya_text_6">Двигатель рольставней</span>
+                - 1
+                <br />
+                -
+                <span data-i18n="Motor_Roller_Tuya_text_7">Пульт дистанционного управления Bluetooth</span>
+                - 1
+                <br />
+                -
+                <span data-i18n="Motor_Roller_Tuya_text_8">USB-кабель</span>
+                - 1
+                <br />
+                -
+                <span data-i18n="Motor_Roller_Tuya_text_9">Клейкая лента 3M</span>
+                - 1
+                <br />
+                -
+                <span data-i18n="Motor_Roller_Tuya_text_10">Шестеренки</span>
+                - 4
+                <br />
+                -
+                <span data-i18n="Motor_Roller_Tuya_text_11">Сумка для винтов</span>
+                - 1
+                <br />
+                -
+                <span data-i18n="Motor_Roller_Tuya_text_12">Руководство по эксплуатации на русском языке</span>
+                - 1
+                <br />
+                <br />
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Tuya.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Tuya
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - Zigbee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - Аккумулятор,
+                <span data-i18n="Static_electricity">От сети</span>
+                Type-C
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                29 600
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="14">
+              <img
+                src="../assets/img/5-cornice/Мотор для роллштор.png"
+                alt="Мотор для роллштор"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Motor_Roller_Aqara_text">
+                  Устройство для автоматического управления шторами. Сделайте умными ваши жалюзи, рулонные шторы и всё,
+                  что открывается цепью управления. Устройство легко устанавливается и работает на аккумуляторе.
+                  Устройством можно управлять со смартфона, голосовыми помощниками, через автоматизации и беспроводными
+                  выключателями. Открывает и закрывает шторы и жалюзи полностью или на заданный процент.
+                </span>
+                <br />
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Aqara.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                , Aqara
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - Zigbee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - Аккумулятор,
+                <span data-i18n="Static_electricity">От сети</span>
+                Type-C
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                47 600
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="15">
+              <img
+                src="../assets/img/5-cornice/карниз для роллштор.png"
+                alt="карниз для роллштор"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Cornice_Roll_59_text">
+                  Умный мотор для рулонных штор Aqara – это мотор для управления рулонными шторами, перегородками или
+                  проекционными экранами. Вы можете управлять шторами со смартфона, с помощью пульта управления, который
+                  идёт в комплекте, или голосом через голосовых помощников Алису.
+                </span>
+                <br />
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Aqara.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                , Aqara
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - Zigbee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                56 000
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="16">
+              <img
+                src="../assets/img/5-cornice/Мотор для рулонных штор Aqara Curtain Rolling Shutter Motor.png"
+                alt="Мотор для рулонных штор Aqara Curtain Rolling Shutter Motor"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Motor_Rolling_Aqara_text_1">
+                  Универсальное применение: Подходит для большинства типов штор или жадюзи, оснащенных валом диаметром
+                  от 35 до 70 мм.
+                </span>
+                <p data-i18n="Motor_Rolling_Aqara_text_2">
+                  Элегантный дизайн: Корпус устройства выполнен из белого пластика, гармонично вписываясь в любой
+                  интерьер. Настройка расписания: Создайте автоматическое открытие/закрытие жалюзи в зависимости от
+                  времени суток, восхода/захода солнца или других событий.
+                </p>
+                <p data-i18n="Motor_Rolling_Aqara_text_3">
+                  Управление вручную: Дублируйте управление с помощью кнопки на корпусе устройства.
+                </p>
+                <p data-i18n="Motor_Rolling_Aqara_text_4">
+                  Защита от перегрузки: Встроенная защита двигателя предотвращает поломки при блокировке механизма.
+                </p>
+                <p data-i18n="Motor_Rolling_Aqara_text_5">
+                  Тихий ход: Наслаждайтесь тишиной благодаря практически бесшумной работе двигателя.
+                </p>
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Aqara.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Aqara
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - Zigbee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                79 800
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer data-i18n="footer">
+          * Цены указаны для ознакомления и могут отличаться от актуальных. Для уточнения стоимости свяжитесь с нами по
+          контактам, указанным вверху страницы.
+        </footer>
+      </div>
+    </section>
+
+    <!-- ПЛАВАЮЩАЯ КНОПКА -->
+    <div class="floating-contact">
+      <div class="floating-menu">
+        <a data-i18n="floating_call" href="tel:+77778410050" class="btn-primary">📞 Позвонить</a>
+        <a href="https://t.me/+77778410050" target="_blank" class="btn-primary">💬 Telegram</a>
+        <a href="https://wa.me/77778410050" target="_blank" class="btn-primary">🟢 WhatsApp</a>
+      </div>
+      <div data-i18n="floating_contact_us" class="floating-btn">💬 Связаться</div>
+    </div>
   </body>
 </html>

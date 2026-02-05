@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/catalog-tabs.css" />
     <title>SmartUI — Умный дом с Алисой в Алматы</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/lang.js"></script>
-    <script src="../js/translation/translation-index.js"></script>
+    <script src="../js/catalog-tabs.js"></script>
+    <script src="../js/translation/translation-sensor.js"></script>
   </head>
 
   <body>
@@ -25,11 +27,11 @@
 
         <!-- Mobile Menu -->
         <nav class="mobile-menu" id="mobileMenu">
-          <a href="index.html">Главная</a>
-          <a href="catalog.html">Каталог</a>
-          <a href="packages.html">Пакеты</a>
-          <a href="services.html">Услуги</a>
-          <a href="portfolio.html">Портфолио</a>
+          <a data-i18n="menu_main" href="../index.html">Главная</a>
+          <a data-i18n="menu_catalog" href="../catalog.html">Каталог</a>
+          <a data-i18n="menu_packages" href="../packages.html">Пакеты</a>
+          <a data-i18n="menu_services" href="../services.html">Услуги</a>
+          <a data-i18n="menu_portfolio" href="../portfolio.html">Портфолио</a>
         </nav>
 
         <div>SmartÜi</div>
@@ -40,7 +42,1127 @@
         <a data-lang="en" class="lang-switcher-button">EN</a>
       </div>
     </header>
-    <!-- Основные табы -->
-    <section class="content"></section>
+
+    <section class="content">
+      <div class="wrapper_for_smart_home_tabs">
+        <div class="wrapper_for_smart_home_content" data-tab="0">
+          <div class="tabs_for_smart_home_items">
+            <div class="tabs_for_smart_home_item" id="sensor_vibration" data-tab="1" data-i18n="Sensor_vibration">
+              Датчик вибрации
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="2" data-i18n="Sensor_open">Датчик открытия дверей</div>
+            <div class="tabs_for_smart_home_item" id="sensor_open" data-tab="3" data-i18n="Sensor_open_Yandex">
+              Датчик открытия дверей Яндекс
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="4" data-i18n="Sensor_light_Aqara">
+              Датчик освещённости Aqara
+            </div>
+            <div
+              class="tabs_for_smart_home_item"
+              id="sensor_presence"
+              data-tab="5"
+              data-i18n="Sensor_Human_presence_Aqara_FP1"
+            >
+              Датчик присутствия Aqara Human Presence Sensor FP1
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="6" data-i18n="Sensor_Human_presence_Aqara_FP2">
+              Датчик присутствия Aqara Presence Sensor FP2
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="7" data-i18n="Sensor_Human_presence_Roximo">
+              Датчик присутствия и освещенности ROXIMO
+            </div>
+            <div class="tabs_for_smart_home_item" id="sensor_move" data-tab="8" data-i18n="Sensor_move_Yandex">
+              Датчик движения Яндекс
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="9" data-i18n="Sensor_move_Aqara">
+              Датчик движения Aqara Motion Sensor
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="10" data-i18n="Sensor_move_Sber">Датчик движения SBER</div>
+            <div class="tabs_for_smart_home_item" data-tab="11" data-i18n="Sensor_move_Ewelink">
+              Датчик движения eWeLink
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="12" data-i18n="Sensor_temperature_Yandex">
+              Датчик температуры и влажности Яндекс
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="13" data-i18n="Sensor_temperature_monitor">
+              Датчик температуры и влажности (монитор)
+            </div>
+            <div
+              class="tabs_for_smart_home_item"
+              id="sensor_temperature"
+              data-tab="14"
+              data-i18n="Sensor_temperature_Kojimo"
+            >
+              Датчик температуры и влажности Kojimo
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="15" data-i18n="Sensor_temperature_Sonoff">
+              Датчик температуры и влажности Sonoff
+            </div>
+            <div class="tabs_for_smart_home_item" id="sensor_air" data-tab="16" data-i18n="Sensor_air_Aqara">
+              Датчик качества воздуха Aqara TVOC Air Quality Monitor
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="17" data-i18n="Sensor_air_QingPing">
+              Монитор качества воздуха QingPing Air Monitor Lite
+            </div>
+            <div class="tabs_for_smart_home_item" id="sensor_water" data-tab="18" data-i18n="Sensor_water_Yandex">
+              Датчик протечки воды Яндекс
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="19" data-i18n="Sensor_water_Sonoff">
+              Датчик протечки воды Sonoff
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="20" data-i18n="Sensor_water_Aqara">
+              Датчик протечки Aqara Water Leak Sensor
+            </div>
+            <div class="tabs_for_smart_home_item" id="sensor_gas" data-tab="21" data-i18n="Sensor_gas_Aqara">
+              Детектор газа Aqara
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="22" data-i18n="Sensor_gas_Smartlife">
+              Детектор газа (CH4) SmartLife
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="23" data-i18n="Sensor_gas_metan">Датчик газа (метан)</div>
+            <div class="tabs_for_smart_home_item" data-tab="24" data-i18n="Sensor_gas_propan">Датчик газа (пропан)</div>
+            <div class="tabs_for_smart_home_item" id="sensor_smoke" data-tab="25" data-i18n="Sensor_smoke_Smartlife">
+              Датчик дыма SmartLife
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="26" data-i18n="Sensor_smoke_Aqara">Датчик дыма Aqara</div>
+            <div class="tabs_for_smart_home_item" data-tab="27" data-i18n="Sensor_smoke_Tuya">Датчик дыма Tuya</div>
+            <div class="tabs_for_smart_home_item" data-tab="28" data-i18n="Siren">Сирена для умного дома</div>
+          </div>
+          <div class="wrapper_for_smart_home_items">
+            <div class="wrapper_for_smart_home_item" data-tab="1">
+              <img
+                src="../assets/img/1-sensor/датчик_вибрации.png"
+                alt="датчик вибрации"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_vibration_text_1">
+                  Беспроводной датчик проследит за сохранностью отдельных предметов — окна, сейфа, ящика с ценным
+                  документами. В случае инцидента, датчик отправит сообщение на смартфон или включит звуковую сирену на
+                  Aqara Hub. Датчик умеет фиксировать три типа событий: наклон, падение и вибрацию.
+                </span>
+                <br />
+                <span data-i18n="Sensor_vibration_text_2">— Если окно откроют, сработает режим наклона.</span>
+                <br />
+                <span data-i18n="Sensor_vibration_text_3">— Если по окну ударят, он распознает вибрацию.</span>
+                <br />
+                <span data-i18n="Sensor_vibration_text_4">— Если разобьют стекло, датчик сообщит о падении.</span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Aqara
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2032
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                12 600
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="2">
+              <img
+                src="../assets/img/1-sensor/Датчик_открытия.png"
+                alt="Датчик открытия дверей"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_open_text">
+                  Датчик открытия дверей и окон на базе протокола Zigbee надежно реагирует на открытие дверей и окон,
+                  позволяя вам создавать разнообразные сценарии умного дома в приложении Дом с Алисой. Свяжите датчик с
+                  различными устройствами и настройте сценарии, которые будут автоматически запускаться при срабатывании
+                  датчика.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2032
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                4 000
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="3">
+              <img
+                src="../assets/img/1-sensor/Датчик_открытия_Яндекс.png"
+                alt="Датчик открытия дверей Яндекс"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_open_Yandex_text">
+                  Компактный беспроводный датчик реагирует на открытие дверей и окон. Свяжите датчик с разными
+                  устройствами и создавайте сценарии в приложении Дом с Алисой. Попробуйте задать сценарий, по которому
+                  датчик напомнит проветрить комнату, если окна закрыты больше 12 часов. И свяжите его с умным
+                  кондиционером, чтобы кондиционер не работал впустую, пока вы проветриваете. А ещё можно привязать
+                  датчик к умной лампочке — и свет в прихожей будет включаться автоматически, когда вы приходите домой.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2032
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                13 100
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="4">
+              <img
+                src="../assets/img/1-sensor/Датчик_освещённости_Aqara.png"
+                alt="Датчик освещённости Aqara"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_light_Aqara_text">
+                  Умный беспроводной датчик освещённости Aqara T1 передаёт хабу данные освещённости в комнате, а тот, в
+                  свою очередь, запускает автоматизации. Например, включает/выключает свет или открывает/закрывает
+                  шторы, отправляя команду соответствующим устройствам. Если освещённость упала до 200 лк — закрыть
+                  шторы. Когда вы войдёте в комнату вечером и включится свет, шторы уже будут закрыты, сохраняя
+                  приватность. Также чтобы дать рассаде достаточно света — работа по расписанию. Но, например, если днём
+                  станет пасмурно, то света для рассады будет недостаточно, а по расписанию включать свет рано.
+                  Установите датчик освещённости, и свет будет включаться тогда, когда стало темно.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2450
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                28 900
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="5">
+              <img
+                src="../assets/img/1-sensor/Датчик присутствия Aqara Human Presence Sensor FP1.png"
+                alt="Датчик присутствия Aqara Human Presence Sensor FP1"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_Human_presence_Aqara_FP1_text">
+                  Улучшите свою домашнюю автоматизацию с помощью нашей технологии на базе искусственного интеллекта,
+                  которая эффективно отфильтровывает распространённые помехи, такие как шторы, вентиляторы и мелкие
+                  домашние животные, обеспечивая высокоточное обнаружение без ложных срабатываний. Простая настройка и
+                  адаптивная чувствительность позволяют устройству адаптироваться к любому пространству, обеспечивая
+                  точность и надёжность. Датчик присутствия FP1E расширяет возможности домашней автоматизации, определяя
+                  движение и неподвижность, позволяя настраивать индивидуальные настройки. Он отправляет напоминания о
+                  необходимости встать после длительного сидения, способствуя формированию более здоровых привычек. В
+                  активных ситуациях, например, на вечеринках, он снижает температуру кондиционера.
+                </span>
+                <p>
+                  <span data-i18n="Need_hub">Нужен хаб</span>
+                  Aqara.
+                  <br />
+                  <br />
+                  <span data-i18n="Ecosystem">Экосистема</span>
+                  - Aqara
+                  <br />
+                  <span data-i18n="Communication_protocol">Протокол связи</span>
+                  - ZigBee
+                  <br />
+                  <span data-i18n="Power">Питание</span>
+                  -
+                  <span data-i18n="Static_electricity">От сети</span>
+                </p>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                41 000
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="6">
+              <img
+                src="../assets/img/1-sensor/Датчик_присутствия_Aqara_Presence_Sensor_FP2.png"
+                alt="Датчик присутствия Aqara Presence Sensor FP2"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_Human_presence_Aqara_FP2_text_1">
+                  Aqara Presence Sensor FP2 фиксирует малейшие движения с максимальной конфиденциальностью. Он
+                  обнаруживает присутствие, даже если вы не двигаетесь.
+                </span>
+                <p data-i18n="Sensor_Human_presence_Aqara_FP2_text_2">
+                  Автоматизация освещения: Включайте свет автоматически, когда кто-то входит в комнату, и выключайте
+                  его, когда все уходят.
+                </p>
+                <p data-i18n="Sensor_Human_presence_Aqara_FP2_text_3">
+                  Системы безопасности: Используйте датчик FP2 для включения сигнализации или камер безопасности, когда
+                  обнаруживается движение.
+                </p>
+                <p data-i18n="Sensor_Human_presence_Aqara_FP2_text_4">
+                  Управление климатом: Регулируйте температуру автоматически, исходя из того, присутствуют ли люди в
+                  комнате.
+                </p>
+                <p data-i18n="Sensor_Human_presence_Aqara_FP2_text_5">
+                  Управление шторами: Автоматически открывайте шторы утром, когда кто-то встает с кровати. FP2 может
+                  определить, находится ли кто-то еще в постели, и автоматизация пробуждения не сработает, если другой
+                  человек не проснулся.
+                </p>
+                <p>
+                  <span data-i18n="Need_hub">Нужен хаб</span>
+                  Aqara.
+                  <br />
+                  <br />
+                  <span data-i18n="Ecosystem">Экосистема</span>
+                  - Aqara
+                  <br />
+                  <span data-i18n="Communication_protocol">Протокол связи</span>
+                  - ZigBee
+                  <br />
+                  <span data-i18n="Power">Питание</span>
+                  - CR2450
+                </p>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                61 000
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="7">
+              <img
+                src="../assets/img/1-sensor/датчик_присутствия_и_освещенности_ROXIMO.png"
+                alt="датчик присутствия и освещенности ROXIMO"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_Human_presence_Roximo_text">
+                  Датчик присутствия определят находится ли в данный момент человек в поле обнаружения датчика. В
+                  настройках датчика можно установить параметры расстояния и чувствительности. Также в устройстве
+                  присутствует датчик освещенности, который так же можно использовать для различных сценариев - например
+                  включать освещение при низком уровне освещенности. Для удобства монтажа в комплекте поставляется
+                  крепление на клейкой ленте. Установка датчика производится на стене или потолке, в зависимости от
+                  условий эксплуатации.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - ROXIMO IoT
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - WiFi
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                22 400
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="8">
+              <img
+                src="../assets/img/1-sensor/датчик_движения.png"
+                alt="датчик движения"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="sensor_move_text">
+                  Улавливает движение и запускает удобные сценарии освещения. Или передаёт, что в помещении кто-то
+                  есть.Беспроводной компактный датчик можно установить где угодно, в квартире или на даче: в прихожей,
+                  ванной, комнатах и даже на лоджии. Свяжите датчик с другими устройствами умного дома и создавайте
+                  множество удобных сценариев в приложении Дом с Алисой. Например, освещение в прихожей сможет
+                  включаться автоматически, когда вы вернётесь домой. А чтобы свет не горел зря, можно настроить его
+                  выключение при отсутствии движения. Также в приложении легко настроить пуш-уведомления — с ними вы
+                  всегда будете в курсе, например, если дома возникнет какое-то движение, пока вас нет. Для подключения
+                  датчика к Умному дому с Алисой нужна Станция, поддерживающая протокол Zigbee.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2450
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                13 300
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="9">
+              <img
+                src="../assets/img/1-sensor/Датчик движения Aqara Motion Sensor P1 MS-S02.png"
+                alt="Датчик движения Aqara Motion Sensor P1 MS-S02"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_move_Aqara_text">
+                  Обновленная версия датчика движения – Aqara Motion Sensor P1. Датчик обнаруживает движение и
+                  определяет уровень освещенности в комнате. Может отправлять уведомление на смартфон или выполнить
+                  автоматизацию, например включить свет. Тайм-аут обнаружения можно настроить от 1 до 200 секунд. Больше
+                  никаких задержек срабатывания. Широкий угол обзора: 170° на расстоянии до 2 метров, 150° на расстоянии
+                  до 7 метров. А ножку датчика возможно повернуть на 360°, тем самым можно фиксировать движение только в
+                  нужной области.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2450
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                13 300
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="10">
+              <img
+                src="../assets/img/1-sensor/Датчик движения Sber.png"
+                alt="Датчик движения Sber"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_move_Sber_text">
+                  Умный датчик движения Sber реагирует на перемещение источников тепла. Настраивайте удобные сценарии
+                  автоматизации: например, пусть датчик включает свет в прихожей, когда регистрирует движение.
+                  Устанавливайте его на потолок в прихожей или на стену в туалете – благодаря работе от батареек, вы
+                  можете разместить устройство в любом удобном месте без необходимости прокладывать провода. Умный
+                  датчик движения Sber отлично интегрируется с различными светильниками, позволяя создать идеальную
+                  атмосферу в вашем доме. При обнаружении движения он может автоматически включать лампу, обеспечивая
+                  мгновенное освещение в нужный момент. Также его можно использовать для управления фонарём на улице,
+                  что повысит уровень безопасности вашего участка.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2032
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                14 400
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="11">
+              <img
+                src="../assets/img/1-sensor/Датчик движения eWeLink.png"
+                alt="Датчик движения eWeLink"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_move_Ewelink_text">
+                  Миниатюрный корпус, маленький и изысканный. Обнаружение движения человека, мгновенное уведомление
+                  приложения, отсутствие пропущенного сигнала тревоги. Высокоточный инфракрасный детектор, более точный.
+                  Подавление воздушного потока, избегайте ложного обнаружения. Интеллектуальная связь с другими
+                  изделиями ewelink. Приложение с несколькими сценариями, простое в установке.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2450
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                8 200
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+
+            <div class="wrapper_for_smart_home_item" data-tab="12">
+              <img
+                src="../assets/img/1-sensor/Датчик температуры Яндекс YNDX-00523.png"
+                alt="датчик температуры Яндекс"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_temperature_Yandex_text">
+                  Измеряет температуру и влажность в комнате и включает устройства умного дома, когда нужно.
+                  Беспроводной компактный датчик легко установить практически где угодно. Свяжите датчик с разными
+                  устройствами и создавайте сценарии в приложении Дом с Алисой. Например, можно объединить датчик с
+                  умным кондиционером и увлажнителем. И настроить сценарий их автоматического запуска, если в комнате
+                  станет слишком жарко и сухо. А можно задать значение температуры, при котором дома будет включаться
+                  обогреватель.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2032
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                14 000
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="13">
+              <img
+                src="../assets/img/1-sensor/Датчик_температуры_-_монитор_.png"
+                alt="Датчик температуры -(монитор)"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_temperature_monitor_text">
+                  Умное решение для контроля климата в вашем доме, обеспечивающее точные измерения и удобное управление
+                  через мобильные приложения. Легко разместить в любом помещении. Идеально подходит для тех, кто хочет
+                  создать умный дом и следить за климатом в помещениях, обеспечивая комфорт и здоровье для всей семьи.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2032
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                13 300
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="14">
+              <img
+                src="../assets/img/1-sensor/Датчик_температуры_и_влажности_Kojimo.png"
+                alt="Датчик температуры и влажности Kojimo"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_temperature_Kojimo_text_1">
+                  Датчик температуры и влажности создан специально для чуткого наблюдения за изменением микроклимата, а
+                  для еще лучшего контроля датчик можно включить в умный сценарий, создавая различные сочетания с
+                  другими устройствами.
+                </span>
+                <p data-i18n="Sensor_temperature_Kojimo_text_2">
+                  Датчик позволяет отслеживать температуру и влажность в месте установки прибора удаленно в режиме
+                  онлайн прямо с экрана телефона. ЖК-экран динамически отображает значения в реальном времени, передает
+                  комфортное состояние домашней среды, соединен с шлюзом и облачной платформой.
+                </p>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2032
+              </div>
+
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                14 400
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="15">
+              <img
+                src="../assets/img/1-sensor/Датчик_температуры_и_влажности_Sonoff_SNZB-02D.png"
+                alt="Датчик температуры и влажности Sonoff SNZB-02D"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_temperature_Sonoff_text_1">
+                  Датчик температуры и влажности создан специально для чуткого наблюдения за изменением микроклимата, а
+                  для еще лучшего контроля датчик можно включить в умный сценарий, создавая различные сочетания с
+                  другими устройствами. Теперь вы можете установить его в каждой комнате и сможете видеть температуру в
+                  доме. С помощью этого датчика можно управлять включением и выключением таких приборов как Вентилятор,
+                  Обогреватель, Кондиционер, Увлажнитель.
+                </span>
+                <p data-i18n="Sensor_temperature_Sonoff_text_2">
+                  Также можно управлять открытием и закрытием штор. Поддерживать правильную влажность в жилых и офисных
+                  помещениях очень важно. Для органов дыхания и увлажнения кожи. Датчик устанавливается в любое удобное
+                  место простым приклеиванием на двусторонний скотч.
+                </p>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2450
+              </div>
+
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                19 400
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="16">
+              <img
+                src="../assets/img/1-sensor/Датчик_качества_воздуха_Aqara_TVOC_Air_Quality_Monitor.png"
+                alt="Датчик качества воздуха Aqara TVOC Air Quality Monitor"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_air_Aqara_text_1">
+                  Aqara TVOC Air Quality Monitor имеет электронный дисплей, который отображает текущие показания
+                  качества воздуха, а также температуру и влажность.
+                </span>
+                <p data-i18n="Sensor_air_Aqara_text_2">Мониторинг TVOC: Датчик измеряет концентрацию TVOC в воздухе.</p>
+                <p data-i18n="Sensor_air_Aqara_text_3">
+                  TVOC – это группа газов, которые могут быть вредны для здоровья человека. Мониторинг температуры и
+                  влажности: датчик также измеряет температуру и влажность в помещении. Датчик работает от батареи и
+                  может проработать до года без подзарядки.
+                </p>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                , Aqara
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2450
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                30 370
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="17">
+              <img
+                src="../assets/img/1-sensor/Монитор качества воздуха QingPing Air Monitor Lite.png"
+                alt="Монитор качества воздуха QingPing Air Monitor Lite"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_air_QingPing_text_1">
+                  Интеллектуальный монитор качества воздуха CO2 Монитор температуры и влажности PM2.5 PM10 5 в 1 Lite
+                  Совместимый с OLED - дисплеем Apple HomeKit в режиме реального времени может заряжать аккумулятор
+                  емкостью 2000 мАч со временем работы до 7 часов. В режиме реального времени узнайте о PM2.5, PM10,
+                  CO2, температуре и влажности в помещении. Поддержка 2,4 ГГц Wi - Fi и BT для удаленного просмотра
+                  данных или экспорта исторических данных. Для пользователей домашнего приложения вы можете удаленно
+                  проверить пять индикаторов или настроить автоматизацию с помощью Home Hub. Дизайн UI в пиксельном
+                  стиле, с более широким углом зрения и более интересными операциями.
+                </span>
+                <p data-i18n="Sensor_air_QingPing_text_2">
+                  • Совместимость с Apple HomeKit: Для пользователей приложения Apple Home можно удаленно проверить пять
+                  индикаторов или автоматизировать настройки с помощью Apple Home Hub.
+                </p>
+                <p data-i18n="Sensor_air_QingPing_text_3">
+                  • 5 в 1 многофункциональный: мониторинг PM2.5, PM10, CO2, температуры и влажности в помещении в режиме
+                  реального времени.
+                </p>
+                <p data-i18n="Sensor_air_QingPing_text_4">
+                  Долгосрочный зарядный литиевый аккумулятор: встроенный литиевый аккумулятор емкостью 2000 мАч со
+                  сроком службы до 7 часов.
+                </p>
+                <p data-i18n="Sensor_air_QingPing_text_5">
+                  • Ясный OLED - дисплей: пиксельный дизайн UI, более широкий угол обзора, более интересная работа.
+                </p>
+                <p data-i18n="Sensor_air_QingPing_text_6">
+                  • Интеллектуальное подключение: поддержка 2,4 ГГц Wi - Fi и BT для удаленного просмотра данных или
+                  экспорта исторических данных.
+                </p>
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - Home Hub
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - WiFi
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                66 100
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="18">
+              <img
+                src="../assets/img/1-sensor/Датчик_протечки_Яндекс.png"
+                alt="Датчик протечки Яндекс"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_water_Yandex_text">
+                  Беспроводной компактный датчик легко установить на полу в кухне или в ванной. Он сразу сообщит, если
+                  обнаружит там воду, и вы сможете быстро отреагировать и избежать неприятных сюрпризов. Просто
+                  настройте пуш-уведомления в приложении Дом с Алисой. Свяжите датчик с умными розетками и создайте
+                  сценарий в приложении, по которому в случае протечки приборы в доме отключатся, а клапан, через
+                  который идёт вода, закроется.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2032
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                19 600
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="19">
+              <img
+                src="../assets/img/1-sensor/Датчик_протечки_Соноф.png"
+                alt="Датчик протечки Соноф"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_water_Sonoff_text">
+                  Умный датчик протечки воды защищает вашу квартиру от неприятных сюрпризов. Он срабатывает, как только
+                  вода попадает на контакты на его нижней панели. Проверять статус smartдатчика и управлять им можно в
+                  приложении, и с помощью голосового помощника Алиса. К умному дому датчик подключается по протоколу
+                  Zigbee.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2477
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                8 400
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="20">
+              <img
+                src="../assets/img/1-sensor/Датчик_протечки_Aqara_Water_Leak_Sensor_T1.png"
+                alt="Датчик протечки Aqara Water Leak Sensor T1"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_water_Aqara_text_1">
+                  Защита от потопа: При обнаружении малейшей утечки воды датчик моментально отправляет оповещение на ваш
+                  смартфон, позволяя вам оперативно принять меры.
+                </span>
+                <p data-i18n="Sensor_water_Aqara_text_2">
+                  Предотвратите ущерб: Благодаря своевременному оповещению вы сможете перекрыть подачу воды и избежать
+                  дорогостоящего ремонта.
+                </p>
+                <p data-i18n="Sensor_water_Aqara_text_3">
+                  Размещение в любых местах: Компактный размер датчика позволяет установить его в потенциально опасных
+                  зонах, таких как кухня, ванная комната, прачечная или подвал.
+                </p>
+                <p data-i18n="Sensor_water_Aqara_text_4">
+                  Умные сценарии: Настройте автоматическое отключение подачи воды при срабатывании датчика, минимизируя
+                  ущерб от протечки.
+                </p>
+                <p data-i18n="Sensor_water_Aqara_text_5">
+                  Защита от пыли и воды: Датчик соответствует стандарту защиты IP67, гарантируя бесперебойную работу
+                  даже во влажных помещениях.
+                </p>
+                <p data-i18n="Sensor_water_Aqara_text_6">
+                  Длительная работа: Батарея обеспечивает до 2 лет автономной работы.
+                </p>
+                <br />
+                <span data-i18n="Need_hub">Нужен хаб</span>
+                Aqara.
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR2477
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                15 890
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="21">
+              <img
+                src="../assets/img/1-sensor/Детектор_газа.png"
+                alt="Детектор газа"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_gas_Aqara_text">
+                  Умный датчик газа Aqara Smart Natural Gas Detector - зафиксирует утечку газа, включит сигнализацию и
+                  отправит push-уведомление на смартфон. Подключается к сети 220 В. В датчик встроена мощная сирена на
+                  85 дБ, которая включается при обнаружении утечки. Также включается мигающий красный светодиод. При
+                  обнаружении утечки включит сирену на всех хабах. На смартфон отправляется push-уведомление.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                , Aqara
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                32 200
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="22">
+              <img
+                src="../assets/img/1-sensor/Датчик_газа_Tuya.png"
+                alt="Датчик газа Tuya"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_gas_Smartlife_text">
+                  Основным предназначением данного датчика является обнаружения утечки газа на ранней стадии и
+                  инициирования запуска сценариев умного дома с целью предотвращения последствий от утечки.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                , Smart Life
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                17 500
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="23">
+              <img
+                src="../assets/img/1-sensor/Датчик_газа__метан__GS_SGMHM-I1.png"
+                alt="Датчик газа (метан) GS SGMHM-I1"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_gas_metan_text_1">
+                  Датчик газа предназначен для оповещения о повышении концентрации бытового газа (метан) в воздухе.
+                  Датчик работает по беспроводной технологии ZigBee.
+                </span>
+                <p data-i18n="Sensor_gas_metan_text_2">Наличие индикатора: да, красный/зеленый/желтый</p>
+                <p data-i18n="Sensor_gas_metan_text_3">Громкость оповещения: 75 дБ/1 м</p>
+                <p data-i18n="Sensor_gas_metan_text_4">Дальность действия сигнала: до 25 м</p>
+                <p data-i18n="Sensor_gas_metan_text_5">Подходит для использования в жилых и офисных помещениях.</p>
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                25 600
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="24">
+              <img
+                src="../assets/img/1-sensor/Датчик_газа__метан__GS_SGMHM-I1.png"
+                alt="Датчик газа (метан) GS SGMHM-I1"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_gas_propan_text">
+                  Датчик газа предназначен для оповещения о повышении концентрации бытового газа (пропан) в воздухе.
+                  Материал корпуса: ABS+PC пластик. Наличие индикатора: да, красный/зеленый/желтый. Устройство работает
+                  только в сети переменного тока. Подходит для использования в жилых и офисных помещениях.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                25 600
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="25">
+              <img
+                src="../assets/img/1-sensor/Датчик_дыма_SmartLife.png"
+                alt="Датчик_дыма_SmartLife"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_smoke_Smartlife_text">
+                  Быстро реагирует на дым. Благодаря высокой чувствительности (0,089-0,25 дБ/м) датчик вовремя заметит
+                  очаг возгорания и подаст звуковой сигнал. Настройте уведомления в мобильном приложении «Дом с Алисой»
+                  и получайте push, когда датчик заметит дым. Долго держит батарею. Датчик работает по беспроводному
+                  протоколу Zigbee и расходует энергию только в момент срабатывания и отправки уведомлений. Прост в
+                  установке. Датчик крепится с помощью липкого слоя.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                , Smart Life
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR123A
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                20 800
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="26">
+              <img
+                src="../assets/img/1-sensor/Датчик_дыма_Aqara.png"
+                alt="Датчик дыма Aqara"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_smoke_Aqara_text">
+                  Умный датчик дыма Aqara Smart Smoke Detector - Зафиксирует задымление, включит сигнализацию и отправит
+                  push-уведомление на смартфон. Работает на батарее CR17450. В датчик встроена мощная сирена на 90 дБ,
+                  которая включается при обнаружении задымления. Также включается мигающий красный светодиод.
+                  Автоматически все датчики дыма связаны между собой. Например, у вас установлены датчики в каждой
+                  комнате. Как только в одной комнате будет зафиксировано возгорание, сигнализация включится
+                  автоматически на всех датчиках. Тем самым, датчики «подстраховывают» друг друга. У датчика дыма
+                  рекордная автономность — до 10 лет работы на одном заряде батареи.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                , Aqara
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR17450
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                30 240
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="27">
+              <img
+                src="../assets/img/1-sensor/Датчик_дыма_Tuya.png"
+                alt="Датчик_дыма_Tuya"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Sensor_smoke_Tuya_text">
+                  Независимый умный датчик дыма. Принцип работы: обнаружение дыма, звуковое оповещение, уведомления в
+                  приложении.
+                </span>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                , Tuya
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                - CR123А
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                17 780
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="28">
+              <img
+                src="../assets/img/1-sensor/Сирена для умного дома GS SRHMP-I1.png"
+                alt="Сирена для умного дома GS SRHMP-I1"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Siren_text_1">
+                  Сирена предназначена для звукового оповещения при срабатывании различных датчиков в домохозяйстве
+                  пользователя. Своевременное оповещение дает возможность оперативно среагировать на нештатную ситуацию
+                  в доме. Подходит для использования в жилых и офисных помещениях. Работает даже при отключении
+                  электроэнергии.
+                </span>
+                <p data-i18n="Siren_text_2">
+                  Технические характеристики и параметры: Напряжение питания: 100-240 В / 50-60 Гц Аккумуляторная
+                  батарея: 3,7 В/ 720 мА Уровень звука: 95 дБ (на расстоянии 1 м)
+                </p>
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - ZigBee
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                24 800
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer data-i18n="footer">
+          * Цены указаны для ознакомления и могут отличаться от актуальных. Для уточнения стоимости свяжитесь с нами по
+          контактам, указанным вверху страницы.
+        </footer>
+      </div>
+    </section>
+
+    <!-- ПЛАВАЮЩАЯ КНОПКА -->
+    <div class="floating-contact">
+      <div class="floating-menu">
+        <a data-i18n="floating_call" href="tel:+77778410050" class="btn-primary">📞 Позвонить</a>
+        <a href="https://t.me/+77778410050" target="_blank" class="btn-primary">💬 Telegram</a>
+        <a href="https://wa.me/77778410050" target="_blank" class="btn-primary">🟢 WhatsApp</a>
+      </div>
+      <div data-i18n="floating_contact_us" class="floating-btn">💬 Связаться</div>
+    </div>
   </body>
 </html>

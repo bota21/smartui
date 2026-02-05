@@ -1,8 +1,8 @@
 // CONTROL PAGE TABS
 
 document.addEventListener("DOMContentLoaded", () => {
-  const tabs = document.querySelectorAll(".tabs_for_smart_home_item_1");
-  const items = document.querySelectorAll(".wrapper_for_smart_home_item_1");
+  const tabs = document.querySelectorAll(".tabs_for_smart_home_item");
+  const items = document.querySelectorAll(".wrapper_for_smart_home_item");
 
   if (!tabs.length || !items.length) return;
 
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Add active
       tab.classList.add("active");
-      document.querySelector(`.wrapper_for_smart_home_item_1[data-tab="${id}"]`).classList.add("active");
+      document.querySelector(`.wrapper_for_smart_home_item[data-tab="${id}"]`).classList.add("active");
     });
   });
 });

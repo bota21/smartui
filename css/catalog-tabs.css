@@ -25,7 +25,7 @@
 
 /* Tab */
 
-.tabs_for_smart_home_item_1 {
+.tabs_for_smart_home_item {
   background: var(--card-bg);
   color: var(--text);
 
@@ -44,14 +44,14 @@
 
 /* Hover */
 
-.tabs_for_smart_home_item_1:hover {
+.tabs_for_smart_home_item:hover {
   background: var(--main);
   border-color: var(--accent);
 }
 
 /* Active tab */
 
-.tabs_for_smart_home_item_1.active {
+.tabs_for_smart_home_item.active {
   background: var(--accent);
   color: white;
 }
@@ -66,7 +66,7 @@
 
 /* Hide all */
 
-.wrapper_for_smart_home_item_1 {
+.wrapper_for_smart_home_item {
   display: none;
 
   background: var(--card-bg);
@@ -82,7 +82,7 @@
 
 /* Show active */
 
-.wrapper_for_smart_home_item_1.active {
+.wrapper_for_smart_home_item.active {
   display: grid;
   grid-template-columns: 350px 1fr;
   gap: 40px;
@@ -107,6 +107,12 @@
 
 .image_tab:hover {
   transform: scale(1.03);
+}
+.wrapper_for_images_many {
+  display: flex;
+}
+.wrapper_for_images_many img {
+  width: 100px;
 }
 
 /* ===============================
@@ -161,7 +167,7 @@
 =============================== */
 
 @media (max-width: 900px) {
-  .wrapper_for_smart_home_item_1.active {
+  .wrapper_for_smart_home_item.active {
     grid-template-columns: 1fr;
   }
 
@@ -174,5 +180,8 @@
   }
   .text_tab {
     font-size: 14px;
+  }
+  .wrapper_for_images_many img {
+    width: 85px;
   }
 }
