@@ -31,6 +31,12 @@ header {
 .menu_logo_wrapper {
   display: flex;
 }
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+}
 /* ===============================
    BURGER MENU
 =============================== */
