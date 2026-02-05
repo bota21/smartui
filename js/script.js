@@ -12,4 +12,21 @@ $(document).ready(function () {
     e.target.value =
       "+7 " + (x[2] ? x[2] : "") + " " + (x[3] ? x[3] : "") + " " + (x[4] ? x[4] : "") + " " + (x[5] ? x[5] : "");
   });
+
+  //Бургер меню
+  const burger = document.getElementById("burgerBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    menu.classList.toggle("active");
+  });
+
+  // Close when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!burger.contains(e.target) && !menu.contains(e.target)) {
+      burger.classList.remove("active");
+      menu.classList.remove("active");
+    }
+  });
 });

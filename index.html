@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
     <title>SmartUI — Умный дом с Алисой в Алматы</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -13,7 +14,25 @@
   </head>
   <body>
     <header>
-      <div>SmartÜi</div>
+      <div class="menu_logo_wrapper">
+        <!-- Burger Menu -->
+        <div class="burger-menu" id="burgerBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu" id="mobileMenu">
+          <a href="index.html">Главная</a>
+          <a href="html/catalog.html">Каталог</a>
+          <a href="html/packages.html">Пакеты</a>
+          <a href="html/services.html">Услуги</a>
+          <a href="html/portfolio.html">Портфолио</a>
+        </nav>
+
+        <div>SmartÜi</div>
+      </div>
       <div class="lang-switch">
         <a data-lang="ru" class="lang-switcher-button">RU</a>
         <a data-lang="kz" class="lang-switcher-button">KZ</a>
@@ -108,5 +127,22 @@
       </div>
       <div data-i18n="floating_contact_us" class="floating-btn">💬 Связаться</div>
     </div>
+    <!-- <script>
+      const burger = document.getElementById("burgerBtn");
+      const menu = document.getElementById("mobileMenu");
+
+      burger.addEventListener("click", () => {
+        burger.classList.toggle("active");
+        menu.classList.toggle("active");
+      });
+
+      // Close when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!burger.contains(e.target) && !menu.contains(e.target)) {
+          burger.classList.remove("active");
+          menu.classList.remove("active");
+        }
+      });
+    </script> -->
   </body>
 </html>
