@@ -1,0 +1,164 @@
+/* ===============================
+   PACKAGES PAGE
+=============================== */
+
+.content {
+  background: var(--bg);
+  padding: 80px 20px;
+}
+
+/* Группа */
+
+.wrapper_group {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+}
+
+/* Заголовок группы */
+
+.group_header {
+  font-size: 34px;
+  font-weight: 700;
+
+  margin-bottom: 35px;
+
+  color: var(--main);
+  text-align: center;
+  position: relative;
+}
+
+/* Линия под заголовком */
+
+.group_header::after {
+  content: "";
+
+  width: 70px;
+  height: 4px;
+
+  background: var(--accent);
+
+  display: block;
+  margin: 15px auto 0;
+
+  border-radius: 4px;
+}
+
+/* Контейнер карточек */
+
+.group_blocks_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 25px;
+}
+
+/* Карточка пакета */
+
+.group_block {
+  background: var(--card-bg);
+  color: var(--text);
+
+  padding: 28px;
+
+  border-radius: 22px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+
+  transition: 0.3s;
+}
+
+/* Hover */
+
+.group_block:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(56, 189, 248, 0.25);
+}
+
+/* Название пакета */
+
+.group_block_header {
+  font-size: 22px;
+  font-weight: 700;
+
+  margin-bottom: 18px;
+
+  color: white;
+
+  position: relative;
+}
+
+/* Accent line */
+
+.group_block_header::after {
+  content: "";
+
+  width: 40px;
+  height: 3px;
+
+  background: var(--accent);
+
+  display: block;
+  margin-top: 8px;
+
+  border-radius: 3px;
+}
+
+/* Контент */
+
+.group_block_content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Ссылки */
+
+.group_block_content_text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+
+  color: #e5e7eb;
+
+  font-size: 15px;
+
+  padding: 6px 0;
+
+  transition: 0.2s;
+}
+
+/* Hover ссылок */
+
+.group_block_content_text:hover {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+/* Точка */
+
+.group_block_content_dot {
+  width: 6px;
+  height: 6px;
+
+  background: var(--accent);
+
+  border-radius: 50%;
+
+  flex-shrink: 0;
+}
+
+/* ===============================
+   MOBILE
+=============================== */
+
+@media (max-width: 768px) {
+  .group_header {
+    font-size: 26px;
+  }
+
+  .group_block {
+    padding: 22px;
+  }
+}

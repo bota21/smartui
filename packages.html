@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/packages.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <title>SmartUI — Умный дом с Алисой в Алматы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/translation/translation-packages.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="menu_logo_wrapper">
+        <!-- Burger Menu -->
+        <div class="burger-menu" id="burgerBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu" id="mobileMenu">
+          <a data-i18n="menu_main" href="index.html">Главная</a>
+          <a data-i18n="menu_catalog" href="catalog.html">Каталог</a>
+          <a data-i18n="menu_packages" href="packages.html">Пакеты</a>
+          <a data-i18n="menu_services" href="services.html">Услуги</a>
+          <a data-i18n="menu_portfolio" href="portfolio.html">Портфолио</a>
+        </nav>
+
+        <div>SmartÜi</div>
+      </div>
+      <div class="lang-switch">
+        <a data-lang="ru" class="lang-switcher-button">RU</a>
+        <a data-lang="kz" class="lang-switcher-button">KZ</a>
+        <a data-lang="en" class="lang-switcher-button">EN</a>
+      </div>
+    </header>
+
+    <section class="content">
+      <div class="wrapper_group">
+        <div class="group_header" data-i18n="Security">Безопасность</div>
+        <div class="group_blocks_wrapper">
+          <div class="group_block">
+            <div class="group_block_header" data-i18n="Home_security">Дом под охраной</div>
+            <div class="group_block_content">
+              <a href="./catalog/control.html#duo" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_station_Alice">Колонка Алиса</span>
+              </a>
+              <a href="./catalog/camera.html#camera_street" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Camera">Камера</span>
+              </a>
+              <a href="./catalog/sensor.html#sensor_open" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Sensor_open">Датчик открытия</span>
+              </a>
+              <a href="./catalog/sensor.html#sensor_move" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Sensor_move">Датчик движения</span>
+              </a>
+              <a href="./catalog/sensor.html#sensor_vibration" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Sensor_vibration">Датчик вибрации</span>
+              </a>
+            </div>
+          </div>
+          <div class="group_block">
+            <div class="group_block_header" data-i18n="Anti_leakage">Антипротечка</div>
+            <div class="group_block_content">
+              <a href="./catalog/control.html#mini3_pro" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_station_Alice">Колонка Алиса</span>
+              </a>
+              <a href="./catalog/sensor.html#sensor_water" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Sensor_anti_leakage">Датчик протечки воды</span>
+              </a>
+              <a href="./catalog/plumbing.html#close_water" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Close_water">Клапан перекрытия</span>
+              </a>
+            </div>
+          </div>
+          <div class="group_block">
+            <div class="group_block_header" data-i18n="Anti_fire">Антипожар</div>
+            <div class="group_block_content">
+              <a href="./catalog.html#midi" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_station_Alice">Колонка Алиса</span>
+              </a>
+              <a href="./catalog/sensor.html#sensor_gas" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Sensor_gas">Датчик утечки газа</span>
+              </a>
+              <a href="./catalog/sensor.html#sensor_smoke" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Sensor_smoke">Датчик дыма</span>
+              </a>
+              <a href="./catalog/plumbing.html#close_water" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Close_water">Клапан перекрытия</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper_group">
+        <div class="group_header" data-i18n="Climate_and_comfort">Климат и комфорт</div>
+        <div class="group_blocks_wrapper">
+          <div class="group_block">
+            <div class="group_block_header" data-i18n="Cozy_climate">Уютный климат</div>
+            <div class="group_block_content">
+              <a href="./catalog/control.html#midi" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_station_Alice">Колонка Алиса</span>
+              </a>
+              <a href="./catalog/control.html#remote" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Remote_Yandex">Пульт ДУ Яндекс</span>
+              </a>
+              <a href="./catalog/sensor.html#sensor_temperature" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Sensor_temperature">Датчик температуры и влажности</span>
+              </a>
+              <a href="./catalog/plumbing.html#control_floor" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Control_floor">Терморегулятор для теплого пола</span>
+              </a>
+              <a href="./catalog/plumbing.html#control_heater" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Control_heater">Терморегулятор для радиатора</span>
+              </a>
+              <a href="./catalog/appliances.html#humidifier" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Humidifier">Увлажнитель воздуха</span>
+              </a>
+            </div>
+          </div>
+          <div class="group_block">
+            <div class="group_block_header" data-i18n="Clean_air">Чистый воздух</div>
+            <div class="group_block_content">
+              <a href="./catalog/control.html#max" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_station_Alice">Колонка Алиса</span>
+              </a>
+              <a href="./catalog/control.html#remote" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Remote_Yandex">Пульт ДУ Яндекс</span>
+              </a>
+              <a href="./catalog/sensor.html#sensor_air" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Sensor_air">Датчик качества воздуха</span>
+              </a>
+              <a href="./catalog/appliances.html#air_purifier" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Air_purifier">Очиститель воздуха</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper_group">
+        <div class="group_header" data-i18n="Light_and_atmosphere">Свет и атмосфера</div>
+        <div class="group_blocks_wrapper">
+          <div class="group_block">
+            <div class="group_block_header" data-i18n="Smart_light">Умный свет</div>
+            <div class="group_block_content">
+              <a href="./catalog/control.html#mini3_pro" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_station_Alice">Колонка Алиса</span>
+              </a>
+              <a href="./catalog/sockets_switches.html#switch" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Switch">Выключатель</span>
+              </a>
+              <a href="./catalog/lighting.html#light_rgb" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_Light_bulb">Умная лампочка</span>
+              </a>
+              <a href="./catalog/sensor.html#sensor_move" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Sensor_move">Датчик движения</span>
+              </a>
+              <a href="./catalog/sensor.html #sensor_open" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Sensor_open">Датчик открытия</span>
+              </a>
+            </div>
+          </div>
+          <div class="group_block">
+            <div class="group_block_header" data-i18n="Home_Cinema">Домашний кинотеатр</div>
+            <div class="group_block_content">
+              <a href="./catalog/control.html#max" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_station_Alice">Колонка Алиса</span>
+              </a>
+              <a href="./catalog/control.html#remote" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Remote_Yandex">Пульт ДУ Яндекс</span>
+              </a>
+              <a href="./catalog/lighting.html#led_strip" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="LED_Strip">Светодиодная лента</span>
+              </a>
+              <a href="./catalog/lighting.html#light_rgb" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_Light_bulb_RGB">Умная лампочка RGB</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper_group">
+        <div class="group_header" data-i18n="For_family">Для семьи</div>
+        <div class="group_blocks_wrapper">
+          <div class="group_block">
+            <div class="group_block_header" data-i18n="Taking_care_of_children">Забота о детях</div>
+            <div class="group_block_content">
+              <a href="./catalog/control.html#mini3" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_station_Alice">Колонка Алиса</span>
+              </a>
+              <a href="./catalog/camera.html#camera_yandex" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Camera">Камера</span>
+              </a>
+              <a href="./catalog/lighting.html#light_night" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Night_light">Ночник</span>
+              </a>
+              <a href="./catalog/sockets_switches.html#socket_yandex" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_plug_wireless">Розетка накладная</span>
+              </a>
+            </div>
+          </div>
+          <div class="group_block">
+            <div class="group_block_header" data-i18n="Caring_for_loved_ones">
+              Забота о близких (для пожилых родителей)
+            </div>
+            <div class="group_block_content">
+              <a href="./catalog/control.html#mini3_pro" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_station_Alice">Колонка Алиса</span>
+              </a>
+              <a href="./catalog/sockets_switches.html#button" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_button_wireless">Беспроводная кнопка (SOS)</span>
+              </a>
+              <a href="./catalog/sensor.html#sensor_move" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Sensor_move">Датчик движения</span>
+              </a>
+            </div>
+          </div>
+          <div class="group_block">
+            <div class="group_block_header" data-i18n="For_pets">Для питомцев</div>
+            <div class="group_block_content">
+              <a href="./catalog/control.html#midi" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_station_Alice">Колонка Алиса</span>
+              </a>
+              <a href="./catalog/camera.html#camera_yandex" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Camre\">Камера</span>
+              </a>
+              <a href="./catalog/appliances.html#pet_feeder" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_feeder">Умная кормушка</span>
+              </a>
+              <a href="./catalog/appliances.html#pet_water" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Smart_drinking_bowl">Умная поилка</span>
+              </a>
+              <a href="./catalog/sensor.html#sensor_presence" class="group_block_content_text">
+                <span class="group_block_content_dot"></span>
+                <span data-i18n="Sensor_presence">Датчик присутствия</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПЛАВАЮЩАЯ КНОПКА -->
+    <div class="floating-contact">
+      <div class="floating-menu">
+        <a data-i18n="floating_call" href="tel:+77778410050" class="btn-primary">📞 Позвонить</a>
+        <a href="https://t.me/+77778410050" target="_blank" class="btn-primary">💬 Telegram</a>
+        <a href="https://wa.me/77778410050" target="_blank" class="btn-primary">🟢 WhatsApp</a>
+      </div>
+      <div data-i18n="floating_contact_us" class="floating-btn">💬 Связаться</div>
+    </div>
+  </body>
+</html>
