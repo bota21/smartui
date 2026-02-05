@@ -115,6 +115,7 @@
 }
 .wrapper_for_images_many {
   display: flex;
+  flex-wrap: wrap;
 }
 .wrapper_for_images_many img {
   width: 100px;
