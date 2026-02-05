@@ -6,144 +6,76 @@
     <link rel="stylesheet" href="css/general.css" />
     <title>SmartUI — Умный дом с Алисой в Алматы</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/translation/translation-index.js"></script>
   </head>
   <body>
     <header>
-      <div>SmartUI</div>
+      <div>SmartÜi</div>
       <div class="lang-switch">
-        <a onclick="setLang('ru')">RU</a>
-        <a onclick="setLang('kz')">KZ</a>
-        <a onclick="setLang('en')">EN</a>
+        <a data-lang="ru" class="lang-switcher-button">RU</a>
+        <a data-lang="kz" class="lang-switcher-button">KZ</a>
+        <a data-lang="en" class="lang-switcher-button">EN</a>
       </div>
     </header>
 
     <!-- HERO -->
     <section class="hero">
       <div class="hero-text">
-        <div class="lang lang-ru active">
-          <h1>SmartUI — Умный дом с Алисой в Алматы</h1>
-          <p>Полностью интегрированная система умного дома для вашего комфорта и безопасности</p>
+        <div>
+          <h1 data-i18n="hero_header">SmartÜi — Умный дом с Алисой в Алматы</h1>
+          <p data-i18n="hero_text">Полностью интегрированная система умного дома для вашего комфорта и безопасности</p>
           <div class="hero-buttons">
-            <a class="btn-primary" href="#form">Рассчитать стоимость</a>
-            <a class="btn-secondary" href="#contacts">Консультация</a>
-          </div>
-        </div>
-        <div class="lang lang-kz">
-          <h1>SmartUI — Алиса арқылы смарт үй Алматыда</h1>
-          <p>Сіздің жайлылығыңыз бен қауіпсіздігіңізге арналған толық интеграцияланған смарт үй жүйесі</p>
-          <div class="hero-buttons">
-            <a class="btn-primary" href="#form">Бағаны есептеу</a>
-            <a class="btn-secondary" href="#contacts">Кеңес алу</a>
-          </div>
-        </div>
-        <div class="lang lang-en">
-          <h1>SmartUI — Smart Home with Alice in Almaty</h1>
-          <p>Fully integrated smart home system for your comfort and safety</p>
-          <div class="hero-buttons">
-            <a class="btn-primary" href="#form">Calculate Price</a>
-            <a class="btn-secondary" href="#contacts">Consultation</a>
+            <a data-i18n="hero_cost" class="btn-primary" href="#form">Рассчитать стоимость</a>
+            <a data-i18n="hero_consult" class="btn-secondary" href="#contacts">Консультация</a>
           </div>
         </div>
       </div>
       <div class="hero-img">
-        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" alt="Alice Smart Home" />
+        <img src="/assets/logo/Shanyrak-grey.png" alt="Smart Ui" />
       </div>
     </section>
 
     <!-- ПРЕИМУЩЕСТВА -->
     <section class="features">
-      <div class="feature-card lang lang-ru active">
-        <h3>Интеграция с Алисой</h3>
-        <p>Полное управление голосом для вашего дома</p>
+      <div class="feature-card">
+        <h3 data-i18n="feature_header_1">Интеграция с Алисой</h3>
+        <p data-i18n="feature_header_text_1">Полное управление голосом для вашего дома</p>
       </div>
-      <div class="feature-card lang lang-ru active">
-        <h3>Поддержка 24/7</h3>
-        <p>Мы всегда на связи для вашей безопасности</p>
+      <div class="feature-card">
+        <h3 data-i18n="feature_header_2">Поддержка 24/7</h3>
+        <p data-i18n="feature_header_text_2">Мы всегда на связи для вашей безопасности</p>
       </div>
-      <div class="feature-card lang lang-ru active">
-        <h3>Современные технологии</h3>
-        <p>Безопасность, автоматизация и комфорт</p>
-      </div>
-
-      <div class="feature-card lang lang-kz">
-        <h3>Алисаға интеграция</h3>
-        <p>Үйіңізді дауыс арқылы толық басқару</p>
-      </div>
-      <div class="feature-card lang lang-kz">
-        <h3>24/7 Қолдау</h3>
-        <p>Сіздің қауіпсіздігіңіз үшін біз әрдайым байланыстамыз</p>
-      </div>
-      <div class="feature-card lang lang-kz">
-        <h3>Заманауи технологиялар</h3>
-        <p>Қауіпсіздік, автоматтандыру және жайлылық</p>
-      </div>
-
-      <div class="feature-card lang lang-en">
-        <h3>Alice Integration</h3>
-        <p>Full voice control for your home</p>
-      </div>
-      <div class="feature-card lang lang-en">
-        <h3>24/7 Support</h3>
-        <p>We are always available for your safety</p>
-      </div>
-      <div class="feature-card lang lang-en">
-        <h3>Modern Technology</h3>
-        <p>Security, automation, and comfort</p>
+      <div class="feature-card">
+        <h3 data-i18n="feature_header_3">Современные технологии</h3>
+        <p data-i18n="feature_header_text_3">Безопасность, автоматизация и комфорт</p>
       </div>
     </section>
 
     <!-- ПАКЕТЫ -->
     <section>
-      <h2 class="lang lang-ru center active">Наши пакеты</h2>
-      <h2 class="lang lang-kz center">Біздің пакеттер</h2>
-      <h2 class="lang lang-en center">Our Packages</h2>
-
+      <h2 data-i18n="package_header" class="lang package-header">Наши пакеты</h2>
       <div class="cards">
-        <div class="card lang lang-ru active">
-          <h3>Базовый</h3>
-          <p>Свет, базовая автоматика, управление через приложение</p>
+        <div class="card">
+          <h3 data-i18n="package_header_1">Базовый</h3>
+          <p data-i18n="package_header_text_1">Свет, базовая автоматика, управление через приложение</p>
         </div>
-        <div class="card lang lang-ru active">
-          <h3>Стандарт</h3>
-          <p>Базовый + голосовое управление через Алису</p>
+        <div class="card">
+          <h3 data-i18n="package_header_2">Стандарт</h3>
+          <p data-i18n="package_header_text_2">Базовый + голосовое управление через Алису</p>
         </div>
-        <div class="card lang lang-ru active">
-          <h3>Премиум</h3>
-          <p>Полный умный дом под ключ + поддержка 24/7</p>
-        </div>
-        <div class="card lang lang-kz">
-          <h3>Базалық</h3>
-          <p>Жарық, негізгі автоматика, қолданба арқылы басқару</p>
-        </div>
-        <div class="card lang lang-kz">
-          <h3>Стандарт</h3>
-          <p>Базалық + Алиса арқылы дауыс басқару</p>
-        </div>
-        <div class="card lang lang-kz">
-          <h3>Премиум</h3>
-          <p>Толық смарт үй + 24/7 қолдау</p>
-        </div>
-        <div class="card lang lang-en">
-          <h3>Basic</h3>
-          <p>Light, basic automation, app control</p>
-        </div>
-        <div class="card lang lang-en">
-          <h3>Standard</h3>
-          <p>Basic + voice control via Alice</p>
-        </div>
-        <div class="card lang lang-en">
-          <h3>Premium</h3>
-          <p>Full smart home turnkey + 24/7 support</p>
+        <div class="card">
+          <h3 data-i18n="package_header_3">Премиум</h3>
+          <p data-i18n="package_header_text_3">Полный умный дом под ключ + поддержка 24/7</p>
         </div>
       </div>
     </section>
 
     <!-- ФОРМА ЗАЯВКИ (Netlify) -->
     <section id="form">
-      <h2 class="lang lang-ru center active">Оставьте заявку</h2>
-      <h2 class="lang lang-kz center">Өтініш қалдыру</h2>
-      <h2 class="lang lang-en center">Leave a request</h2>
-
+      <h2 data-i18n="form_header">Оставьте заявку</h2>
       <form name="smartui-form" method="POST" data-netlify="true">
         <!-- обязательное скрытое поле для Netlify -->
         <input type="hidden" name="form-name" value="smartui-form" />
@@ -156,53 +88,25 @@
           required
           title="Введите полный номер, например +7 777 123 45 67"
         />
-        <button class="lang lang-ru active" type="submit">Отправить</button>
-        <button class="lang lang-kz" type="submit">Жіберу</button>
-        <button class="lang lang-en" type="submit">Submit</button>
+        <button data-i18n="form_send" type="submit">Отправить</button>
       </form>
     </section>
 
     <!-- КОНТАКТЫ -->
     <section id="contacts">
-      <div class="contact-header lang lang-ru active">Контакты</div>
-      <div class="contact-header lang lang-kz">Байланыс</div>
-      <div class="contact-header lang lang-en">Contacts</div>
+      <div data-i18n="contact_header" class="contact-header">Контакты</div>
 
-      <div class="contact-text lang lang-ru active">г. Алматы, Казахстан</div>
-      <div class="contact-text lang lang-kz">Алматы, Қазақстан</div>
-      <div class="contact-text lang lang-en">Almaty, Kazakhstan</div>
+      <div data-i18n="contact_address" class="contact-text">г. Алматы, Казахстан</div>
     </section>
 
     <!-- ПЛАВАЮЩАЯ КНОПКА -->
     <div class="floating-contact">
-      <div class="lang lang-ru active floating-btn">💬 Связаться</div>
-      <div class="lang lang-kz floating-btn">💬 Байланысу</div>
-      <div class="lang lang-en floating-btn">💬 Contacts us</div>
       <div class="floating-menu">
-        <a href="tel:+77778410050" class="btn-primary">📞 Позвонить</a>
+        <a data-i18n="floating_call" href="tel:+77778410050" class="btn-primary">📞 Позвонить</a>
         <a href="https://t.me/+77778410050" target="_blank" class="btn-primary">💬 Telegram</a>
         <a href="https://wa.me/77778410050" target="_blank" class="btn-primary">🟢 WhatsApp</a>
       </div>
+      <div data-i18n="floating_contact_us" class="floating-btn">💬 Связаться</div>
     </div>
-
-    <script>
-      function setLang(lang) {
-        document.querySelectorAll(".lang").forEach((el) => {
-          el.classList.remove("active");
-          if (el.classList.contains("lang-" + lang)) el.classList.add("active");
-        });
-      }
-      document.querySelector(".floating-btn").addEventListener("click", function () {
-        const menu = document.querySelector(".floating-menu");
-        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-      });
-
-      const phoneInput = document.querySelector('input[name="phone"]');
-      phoneInput.addEventListener("input", function (e) {
-        let x = e.target.value.replace(/\D/g, "").match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
-        e.target.value =
-          "+7 " + (x[2] ? x[2] : "") + " " + (x[3] ? x[3] : "") + " " + (x[4] ? x[4] : "") + " " + (x[5] ? x[5] : "");
-      });
-    </script>
   </body>
 </html>

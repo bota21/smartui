@@ -13,6 +13,17 @@ body {
   color: var(--main);
 }
 
+body {
+  background: var(--bg-gradient);
+  color: var(--text);
+}
+
+.feature-card,
+.card {
+  background: var(--card-bg);
+  color: var(--text);
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -25,7 +36,7 @@ header {
   z-index: 1000;
 }
 
-.lang-switch a {
+.lang-switcher-button {
   margin-left: 15px;
   color: white;
   font-weight: 600;
@@ -76,7 +87,8 @@ header {
 
 .btn-secondary {
   background: white;
-  color: var(--main);
+  color: black;
+  text-decoration: none;
 }
 .btn-secondary:hover {
   background: #e2e8f0;
@@ -197,7 +209,7 @@ form button:hover {
 .floating-menu {
   display: none;
   flex-direction: column;
-  margin-top: 10px;
+  margin-bottom: 10px;
   gap: 10px;
 }
 .floating-menu a {
@@ -215,6 +227,7 @@ form button:hover {
 }
 #contacts {
   margin-top: 40px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,13 +239,14 @@ form button:hover {
 .contact-text {
   margin-top: 10px;
 }
-.lang {
-  display: none;
+
+.lang-active {
+  color: var(--card-bg);
 }
-.lang.active {
-  display: block;
-}
-.center {
+.package-header,
+.contact-header,
+.contact-text {
+  color: var(--card-bg);
   text-align: center;
 }
 
