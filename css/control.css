@@ -1,0 +1,175 @@
+/* ===============================
+   CONTROL PAGE LAYOUT
+=============================== */
+
+.wrapper_for_smart_home_tabs {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* ===============================
+   TOP PRODUCT TABS
+=============================== */
+
+.tabs_for_smart_home_items {
+  display: flex;
+  gap: 12px;
+
+  overflow-x: auto;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+
+  scrollbar-width: thin;
+}
+
+/* Tab */
+
+.tabs_for_smart_home_item_1 {
+  background: var(--card-bg);
+  color: var(--text);
+
+  padding: 12px 22px;
+  border-radius: 50px;
+
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  border: 1px solid transparent;
+}
+
+/* Hover */
+
+.tabs_for_smart_home_item_1:hover {
+  background: var(--main);
+  border-color: var(--accent);
+}
+
+/* Active tab */
+
+.tabs_for_smart_home_item_1.active {
+  background: var(--accent);
+  color: white;
+}
+
+/* ===============================
+   PRODUCT CARD
+=============================== */
+
+.wrapper_for_smart_home_items {
+  position: relative;
+}
+
+/* Hide all */
+
+.wrapper_for_smart_home_item_1 {
+  display: none;
+
+  background: var(--card-bg);
+  color: var(--text);
+
+  border-radius: 24px;
+  padding: 35px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+
+  animation: fadeUp 0.4s ease;
+}
+
+/* Show active */
+
+.wrapper_for_smart_home_item_1.active {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 40px;
+}
+
+/* ===============================
+   IMAGE
+=============================== */
+
+.wrapper_for_images,
+.image_tab {
+  width: 100%;
+}
+
+.image_tab {
+  max-width: 100%;
+  border-radius: 20px;
+  cursor: zoom-in;
+
+  transition: 0.3s;
+}
+
+.image_tab:hover {
+  transform: scale(1.03);
+}
+
+/* ===============================
+   TEXT
+=============================== */
+
+.text_tab {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+
+.text_tab p {
+  margin-top: 12px;
+}
+
+/* ===============================
+   PRICE
+=============================== */
+
+.price_tab {
+  grid-column: 1 / -1;
+
+  margin-top: 25px;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  color: var(--accent);
+
+  text-align: right;
+}
+
+/* ===============================
+   ANIMATION
+=============================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   MOBILE
+=============================== */
+
+@media (max-width: 900px) {
+  .wrapper_for_smart_home_item_1.active {
+    grid-template-columns: 1fr;
+  }
+
+  .price_tab {
+    text-align: center;
+  }
+
+  .tabs_for_smart_home_items {
+    padding-bottom: 10px;
+  }
+}
