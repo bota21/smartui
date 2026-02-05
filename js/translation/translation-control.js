@@ -287,7 +287,7 @@ const translations = {
     IR_Port: "IR Port",
     Cost: "Cost",
     tenge: "tg",
-    floating_call: "📞 Contacts us",
+    floating_call: "📞 Call us",
     floating_contact_us: "Contacts us",
     footer:
       "* The prices are provided for reference only and may differ from the actual ones. To confirm the exact cost, please contact us using the details provided at the top of the page.",

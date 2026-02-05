@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/layout.css" />
-    <link rel="stylesheet" href="../css/control-tabs.css" />
+    <link rel="stylesheet" href="../css/catalog-tabs.css" />
     <title>SmartUI — Умный дом с Алисой в Алматы</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/lang.js"></script>
     <script src="../js/catalog-tabs.js"></script>
-    <script src="../js/translation/translation-sensor.js"></script>
+    <script src="../js/translation/translation-camera.js"></script>
   </head>
 
   <body>
@@ -45,6 +45,309 @@
 
     <section class="content">
       <div class="wrapper_for_smart_home_tabs">
+        <div class="wrapper_for_smart_home_content" data-tab="7">
+          <div class="tabs_for_smart_home_items">
+            <div
+              class="tabs_for_smart_home_item m_font_size_10"
+              id="camera_yandex"
+              data-tab="70"
+              data-i18n="Camera_Yandex"
+            >
+              Камера видео наблюдения Yandex
+            </div>
+            <div class="tabs_for_smart_home_item" id="camera_street" data-tab="71" data-i18n="Camera_street_Roximo">
+              Умная камера уличная ROXIMO
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="72" data-i18n="Camera_rotary_Roximo">
+              Умная поворотная камера
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="73" data-i18n="Camera_Roximo">Умная камера</div>
+            <div class="tabs_for_smart_home_item" data-tab="74" data-i18n="Camera_E27_Roximo">
+              Умная камера с адаптером питания E27
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="75" data-i18n="Camera_4G_Roximo">
+              Умная 4G камера уличная поворотная ROXIMO
+            </div>
+            <div class="tabs_for_smart_home_item" data-tab="76" data-i18n="Camera_street_rotary_Roximo">
+              Умная камера уличная поворотная ROXIMO
+            </div>
+          </div>
+          <div class="wrapper_for_smart_home_items">
+            <div class="wrapper_for_smart_home_item" data-tab="70">
+              <img
+                src="../assets/img/8-camera/Камера видеонаблюдения YNDX-00582GRY.png"
+                alt="Камера видеонаблюдения YNDX-00582GRY"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Camera_Yandex_text_1">
+                  Камера видеонаблюдения YNDX-00582GRY — идеальный выбор для дома и дачи. Это первая умная камера
+                  Яндекса с современным дизайном и качественным видеонаблюдением через Wi-Fi. Она интегрируется с
+                  экосистемой Алисы, имеет угол обзора 103º и поворотный механизм 350º, что позволяет не упустить ни
+                  одной детали. Она активирует запись при обнаружении движения или звуков и включает ночное видение в
+                  темноте.
+                </span>
+                <p data-i18n="Camera_Yandex_text_2">
+                  Вы можете следить за трансляцией через приложение или ТВ Станцию и делиться доступом с родственниками.
+                  Камера уведомляет о любой активности и может отключать запись по необходимости.
+                </p>
+                <p data-i18n="Camera_Yandex_text_3">Интерфейсы: USB, Wi-Fi, поддержка карт памяти microSD.</p>
+                <p data-i18n="Camera_Yandex_text_4">
+                  Особенности: детектор движения, приватный режим, степень защиты IP20.
+                </p>
+                <p data-i18n="Camera_Yandex_text_5">
+                  Дополнительные функции: встроенный микрофон, стриминг видео на смартфон, голосовое управление через
+                  Яндекс Станцию.
+                </p>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                -
+                <span data-i18n="Yandex_Smart_Home">Умный дом Яндекса</span>
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - WiFi
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                41 600
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="71">
+              <img
+                src="../assets/img/8-camera/видеокамера Roximo уличная.png"
+                alt="видеокамера Roximo уличная"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Camera_street_Roximo_text_1">
+                  Камерой можно управлять с помощью специального мобильного приложения, просматривать в режиме онлайн
+                  все, что происходит в Вашем доме. Видео можно записывать на SD-карту или в облачное хранилище, а затем
+                  просматривать. При использовании охранной функции - при обнаружении движения камера автоматически
+                  запишет и сохранит видеозапись.
+                </span>
+                <p data-i18n="Camera_street_Roximo_text_2">
+                  Доступны ночной режим, обнаружение движения, двусторонняя связь.
+                </p>
+                <p data-i18n="Camera_street_Roximo_text_3">
+                  Комплектация: инструкция- 1шт; Крепление- 1шт, Адаптер питания- 1шт.; Умная камера- 1шт
+                </p>
+                <br />
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - ROXIMO IoT
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - WiFi
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                48 800
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="72">
+              <img
+                src="../assets/img/8-camera/видеокамера Roximo поворотная.png"
+                alt="видеокамера Roximo поворотная"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Camera_rotary_Roximo_text_1">
+                  Ip камера имеет функцию поворота и может просматривать пространство на все 360 градусов. В комплекте
+                  имеется специальное крепление и камера может быть закреплена к стене или потолку, а изображение
+                  картинки можно перевернуть в настройках камеры.
+                </span>
+                <p data-i18n="Camera_rotary_Roximo_text_2">
+                  Доступны ночной режим, обнаружение движения, двусторонняя связь, видеоняня.
+                </p>
+                <p data-i18n="Camera_rotary_Roximo_text_3">
+                  Комплектация: USB кабель- 1шт; Адаптер питания- 1шт; инструкция- 1шт; Умная камера- 1 шт; комплект
+                  крепежа- 1шт
+                </p>
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - ROXIMO IoT
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - WiFi
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                34 400
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="73">
+              <img
+                src="../assets/img/8-camera/видеокамера Roximo умная.png"
+                alt="видеокамера Roximo умная"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Camera_Roximo_text_1">
+                  Камера выполнена в корпусе для установки на специальной поворотной ножке. Платформа ножки так же может
+                  быть закреплена к стене или потолку, а изображение картинки можно перевернуть в настройках камеры.
+                </span>
+                <p data-i18n="Camera_Roximo_text_2">
+                  Доступны ночной режим, обнаружение движения, двусторонняя связь, видеоняня.
+                </p>
+                <p data-i18n="Camera_Roximo_text_3">
+                  Комплектация: Лента 3М- 1шт; USB кабель- 1шт; Адаптер питания-1шт; инструкция- 1шт; Умная камера- 1шт
+                </p>
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - ROXIMO IoT
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - WiFi
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                33 600
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="74">
+              <img
+                src="../assets/img/8-camera/видеокамера Roximo лампочка.png"
+                alt="видеокамера Roximo лампочка"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Camera_E27_Roximo_text_1">
+                  Благодаря адаптеру питания Е27 камеру можно установить, вкрутив ее вместо лампочки. Ip камера имеет
+                  функцию поворота и может просматривать пространство на все 360 градусов. В комплекте имеется
+                  специальное крепление и камера может быть закреплена к стене или потолку, а изображение картинки можно
+                  перевернуть в настройках камеры.
+                </span>
+                <p data-i18n="Camera_E27_Roximo_text_2">
+                  Доступны ночной режим, обнаружение движения, двусторонняя связь, видеоняня.
+                </p>
+                <p data-i18n="Camera_E27_Roximo_text_3">
+                  Комплектация: USB кабель- 1шт; Адаптер питания- 1шт; инструкция- 1шт; Крепежный комплект- 1шт; Адаптер
+                  питания Е27-1шт; Умная камера- 1шт
+                </p>
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - ROXIMO IoT
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - WiFi
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                39 200
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="75">
+              <img
+                src="../assets/img/8-camera/видеокамера Roximo симка.png"
+                alt="видеокамера Roximo симка"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Camera_4G_Roximo_text_1">
+                  Наличие слота для сим-карты и поддержка стандарта связи 4G позволяют установить камеру в любом месте
+                  без необходимости проводить интернет для удаленного наблюдения. Видео можно записывать на SD-карту или
+                  в облачное хранилище, а затем просматривать. При использовании охранной функции - при обнаружении
+                  движения камера автоматически запишет и сохранит видеозапись.
+                </span>
+                <p data-i18n="Camera_4G_Roximo_text_2">
+                  Доступны ночной режим, обнаружение движения, двусторонняя связь, режим патрулирования, возврат в
+                  дежурную позицию.
+                </p>
+                <p data-i18n="Camera_4G_Roximo_text_3">
+                  Комплектация: инструкция- 1шт; Крепление- 1шт, Адаптер питания- 1шт.; Умная камера- 1шт
+                </p>
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - ROXIMO IoT
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - GSM
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                72 000
+                <span data-i18n="tenge">тг</span>
+              </div>
+            </div>
+            <div class="wrapper_for_smart_home_item" data-tab="76">
+              <img
+                src="../assets/img/8-camera/видеокамера Roximo wifi.png"
+                alt="видеокамера Roximo wifi"
+                class="image_tab"
+                onclick="toggleZoom(this)"
+              />
+              <div class="text_tab">
+                <span data-i18n="Camera_street_rotary_Roximo_text_1">
+                  Умная уличная поворотная камера ROXIMO RHC202 - это одно из устройств экосистемы умного дома Roximo.
+                </span>
+                <p data-i18n="Camera_street_rotary_Roximo_text_2">
+                  Камера имеет функцию поворота и может просматривать пространство на все 360 градусов. В комплекте
+                  имеется специальное крепление и камера может быть закреплена к стене или потолку, а изображение
+                  картинки можно перевернуть в настройках камеры. При использовании охранной функции - при обнаружении
+                  движения камера автоматически запишет и сохранит видеозапись.
+                </p>
+                <p data-i18n="Camera_street_rotary_Roximo_text_3">
+                  Доступны ночной режим, обнаружение движения, двусторонняя связь, режим патрулирования, возврат в
+                  дежурную позицию.
+                </p>
+                <p data-i18n="Camera_street_rotary_Roximo_text_4">
+                  Комплектация: инструкция- 1шт; Крепление- 1шт, Адаптер питания- 1шт.; Умная камера- 1шт
+                </p>
+                <br />
+                <span data-i18n="Ecosystem">Экосистема</span>
+                - ROXIMO IoT
+                <br />
+                <span data-i18n="Communication_protocol">Протокол связи</span>
+                - WiFi
+                <br />
+                <span data-i18n="Power">Питание</span>
+                -
+                <span data-i18n="Static_electricity">От сети</span>
+              </div>
+              <div class="price_tab">
+                <span data-i18n="Cost">Стоимость</span>
+                56 000тг
+              </div>
+            </div>
+          </div>
+        </div>
+
         <footer data-i18n="footer">
           * Цены указаны для ознакомления и могут отличаться от актуальных. Для уточнения стоимости свяжитесь с нами по
           контактам, указанным вверху страницы.

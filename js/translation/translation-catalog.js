@@ -41,7 +41,7 @@ const translations = {
     menu_packages: "Packages",
     menu_services: "Services",
     menu_portfolio: "Portfolio",
-    floating_call: "📞 Contacts us",
+    floating_call: "📞 Call us",
     floating_contact_us: "Contacts us",
     control: "Control",
     sensors: "Sensors",

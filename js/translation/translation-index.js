@@ -66,7 +66,7 @@ const translations = {
     menu_packages: "Packages",
     menu_services: "Services",
     menu_portfolio: "Portfolio",
-    floating_call: "📞 Contacts us",
+    floating_call: "📞 Call us",
     floating_contact_us: "Contacts us",
     hero_header: "SmartÜi — Smart Home with Alice in Almaty",
     hero_text: "Fully integrated smart home system for your comfort and safety",
