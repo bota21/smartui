@@ -1,0 +1,86 @@
+/* ===============================
+   CATALOG PAGE
+=============================== */
+
+.content {
+  background: var(--bg);
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+
+/* Grid для категорий */
+
+.container_for_tabs {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* Карточка категории */
+
+.smart_home_tabs {
+  background: var(--card-bg);
+  color: var(--text);
+
+  padding: 35px 25px;
+  border-radius: 20px;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Accent line */
+
+.smart_home_tabs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: var(--accent);
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s;
+}
+
+/* Hover */
+
+.smart_home_tabs:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.3);
+}
+
+.smart_home_tabs:hover::before {
+  transform: scaleX(1);
+}
+
+/* Active (если понадобится) */
+
+.smart_home_tabs.active {
+  border: 2px solid var(--accent);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .smart_home_tabs {
+    padding: 25px 20px;
+    font-size: 16px;
+  }
+}

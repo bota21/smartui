@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <title>SmartUI — Умный дом с Алисой в Алматы</title>
@@ -24,11 +25,11 @@
 
         <!-- Mobile Menu -->
         <nav class="mobile-menu" id="mobileMenu">
-          <a href="index.html">Главная</a>
-          <a href="html/catalog.html">Каталог</a>
-          <a href="html/packages.html">Пакеты</a>
-          <a href="html/services.html">Услуги</a>
-          <a href="html/portfolio.html">Портфолио</a>
+          <a data-i18n="menu_main" href="index.html">Главная</a>
+          <a data-i18n="menu_catalog" href="catalog.html">Каталог</a>
+          <a data-i18n="menu_packages" href="packages.html">Пакеты</a>
+          <a data-i18n="menu_services" href="services.html">Услуги</a>
+          <a data-i18n="menu_portfolio" href="portfolio.html">Портфолио</a>
         </nav>
 
         <div>SmartÜi</div>
@@ -127,22 +128,5 @@
       </div>
       <div data-i18n="floating_contact_us" class="floating-btn">💬 Связаться</div>
     </div>
-    <!-- <script>
-      const burger = document.getElementById("burgerBtn");
-      const menu = document.getElementById("mobileMenu");
-
-      burger.addEventListener("click", () => {
-        burger.classList.toggle("active");
-        menu.classList.toggle("active");
-      });
-
-      // Close when clicking outside
-      document.addEventListener("click", (e) => {
-        if (!burger.contains(e.target) && !menu.contains(e.target)) {
-          burger.classList.remove("active");
-          menu.classList.remove("active");
-        }
-      });
-    </script> -->
   </body>
 </html>
