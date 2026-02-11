@@ -61,7 +61,7 @@ footer {
 /* ===============================
    BURGER MENU
 =============================== */
-#main_content {
+.main_content {
   display: block;
 }
 

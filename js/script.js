@@ -2,7 +2,7 @@ $(document).ready(function () {
   // 1.Бургер меню
   const burger = document.getElementById("burgerBtn");
   const menu = document.getElementById("mobileMenu");
-  const content = document.getElementById("content");
+  const content = document.getElementById("main_content");
 
   burger.addEventListener("click", () => {
     burger.classList.toggle("active");
@@ -10,21 +10,22 @@ $(document).ready(function () {
     content.classList.toggle("main_content_hide");
   });
 
-  // 2.Close when clicking outside
+  // Close when clicking outside
   document.addEventListener("click", (e) => {
     if (!burger.contains(e.target) && !menu.contains(e.target)) {
       burger.classList.remove("active");
       menu.classList.remove("active");
+      content.classList.toggle("main_content_hide");
     }
   });
 
-  // 3.Меню связаться
+  // 2.Меню связаться
   document.querySelector(".floating-btn").addEventListener("click", function () {
     const menu = document.querySelector(".floating-menu");
     menu.style.display = menu.style.display === "flex" ? "none" : "flex";
   });
 
-  //   4.Проверка поля номер телефона в заявке
+  //   3.Проверка поля номер телефона в заявке
   const phoneInput = document.querySelector('input[name="phone"]');
 
   phoneInput.addEventListener("input", (e) => {
