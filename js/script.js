@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  //Бургер меню
+  // 1.Бургер меню
   const burger = document.getElementById("burgerBtn");
   const menu = document.getElementById("mobileMenu");
 
@@ -8,7 +8,7 @@ $(document).ready(function () {
     menu.classList.toggle("active");
   });
 
-  // Close when clicking outside
+  // 2.Close when clicking outside
   document.addEventListener("click", (e) => {
     if (!burger.contains(e.target) && !menu.contains(e.target)) {
       burger.classList.remove("active");
@@ -16,17 +16,31 @@ $(document).ready(function () {
     }
   });
 
-  // Меню связаться
+  // 3.Меню связаться
   document.querySelector(".floating-btn").addEventListener("click", function () {
     const menu = document.querySelector(".floating-menu");
     menu.style.display = menu.style.display === "flex" ? "none" : "flex";
   });
 
-  //   Проверка поля номер телефона в заявке
+  //   4.Проверка поля номер телефона в заявке
   const phoneInput = document.querySelector('input[name="phone"]');
-  phoneInput.addEventListener("input", function (e) {
-    let x = e.target.value.replace(/\D/g, "").match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+
+  phoneInput.addEventListener("input", (e) => {
+    let value = e.target.value.replace(/\D/g, "");
+
+    // если пользователь всё стёр — оставляем поле пустым
+    if (value.length === 0) {
+      e.target.value = "";
+      return;
+    }
+
+    // если начали ввод без 7 — считаем, что это номер KZ
+    if (value[0] === "8") value = "7" + value.slice(1);
+    if (value[0] !== "7") value = "7" + value;
+
+    const x = value.match(/(\d{1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+
     e.target.value =
-      "+7 " + (x[2] ? x[2] : "") + " " + (x[3] ? x[3] : "") + " " + (x[4] ? x[4] : "") + " " + (x[5] ? x[5] : "");
+      "+7" + (x[2] ? " " + x[2] : "") + (x[3] ? " " + x[3] : "") + (x[4] ? " " + x[4] : "") + (x[5] ? " " + x[5] : "");
   });
 });
