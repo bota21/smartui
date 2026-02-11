@@ -18,7 +18,7 @@ const translations = {
     IR_Port: "ИК порты",
     Cost: "Бағасы",
     tenge: "тг",
-    floating_call: "📞 Хабарласу",
+    floating_call: "Хабарласу",
     floating_contact_us: "Байланысу",
     footer:
       "* Бағалар ақпараттық мақсатта көрсетілген және нақты бағалардан өзгешеленуі мүмкін. Нақты құнын анықтау үшін беттің жоғарғы бөлігінде көрсетілген байланыс арқылы хабарласыңыз.",
@@ -91,7 +91,7 @@ const translations = {
     IR_Port: "ИК Порт",
     Cost: "Стоимость",
     tenge: "тг",
-    floating_call: "📞 Позвонить",
+    floating_call: "Позвонить",
     floating_contact_us: "Связаться",
     footer:
       "* Цены указаны для ознакомления и могут отличаться от актуальных. Для уточнения стоимости свяжитесь с нами по контактам, указанным вверху страницы.",
@@ -365,7 +365,7 @@ const translations = {
     IR_Port: "IR Port",
     Cost: "Cost",
     tenge: "tg",
-    floating_call: "📞 Call us",
+    floating_call: "Call us",
     floating_contact_us: "Contacts us",
     footer:
       "* The prices are provided for reference only and may differ from the actual ones. To confirm the exact cost, please contact us using the details provided at the top of the page.",

@@ -158,6 +158,11 @@ footer {
 }
 
 /* Меню связаться */
+/* .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+} */
 .floating-contact {
   position: fixed;
   bottom: 20px;
@@ -185,7 +190,7 @@ footer {
   gap: 10px;
 }
 .floating-menu a {
-  display: block;
+  display: flex;
   padding: 12px 18px;
   border-radius: 12px;
   background: var(--accent);
@@ -196,4 +201,23 @@ footer {
 }
 .floating-menu a:hover {
   background: #0ea5e9;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.call {
+  color: #1e293b;
+}
+
+.telegram {
+  color: #229ed9;
+}
+
+.whatsapp {
+  color: #25d366;
 }
