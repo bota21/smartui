@@ -2,10 +2,12 @@ $(document).ready(function () {
   // 1.Бургер меню
   const burger = document.getElementById("burgerBtn");
   const menu = document.getElementById("mobileMenu");
+  const content = document.getElementById("content");
 
   burger.addEventListener("click", () => {
     burger.classList.toggle("active");
     menu.classList.toggle("active");
+    content.classList.toggle("main_content_hide");
   });
 
   // 2.Close when clicking outside

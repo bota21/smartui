@@ -61,6 +61,13 @@ footer {
 /* ===============================
    BURGER MENU
 =============================== */
+#main_content {
+  display: block;
+}
+
+.main_content_hide {
+  display: none;
+}
 
 .burger-menu {
   width: 28px;

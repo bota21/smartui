@@ -41,115 +41,119 @@
       </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-text">
-        <div>
-          <h1 data-i18n="hero_header">SmartÜi — Умный дом с Алисой в Алматы</h1>
-          <p data-i18n="hero_text">Полностью интегрированная система умного дома для вашего комфорта и безопасности</p>
-          <div class="hero-buttons">
-            <a data-i18n="hero_cost" class="btn-primary" href="#form">Рассчитать стоимость</a>
-            <a data-i18n="hero_consult" class="btn-secondary" href="#contacts">Консультация</a>
+    <div id="main_content" class="main_content">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-text">
+          <div>
+            <h1 data-i18n="hero_header">SmartÜi — Умный дом с Алисой в Алматы</h1>
+            <p data-i18n="hero_text">
+              Полностью интегрированная система умного дома для вашего комфорта и безопасности
+            </p>
+            <div class="hero-buttons">
+              <a data-i18n="hero_cost" class="btn-primary" href="#form">Рассчитать стоимость</a>
+              <a data-i18n="hero_consult" class="btn-secondary" href="#contacts">Консультация</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="hero-img">
-        <img src="/assets/logo/Shanyrak-grey.png" alt="Smart Ui" />
-      </div>
-    </section>
-
-    <!-- ПРЕИМУЩЕСТВА -->
-    <section class="features">
-      <div class="feature-card">
-        <h3 data-i18n="feature_header_1">Интеграция с Алисой</h3>
-        <p data-i18n="feature_header_text_1">Полное управление голосом для вашего дома</p>
-      </div>
-      <div class="feature-card">
-        <h3 data-i18n="feature_header_2">Поддержка 24/7</h3>
-        <p data-i18n="feature_header_text_2">Мы всегда на связи для вашей безопасности</p>
-      </div>
-      <div class="feature-card">
-        <h3 data-i18n="feature_header_3">Современные технологии</h3>
-        <p data-i18n="feature_header_text_3">Безопасность, автоматизация и комфорт</p>
-      </div>
-    </section>
-
-    <!-- ПАКЕТЫ -->
-    <section>
-      <h2 data-i18n="package_header" class="package-header">Наши пакеты</h2>
-      <div class="cards">
-        <div class="card">
-          <h3 data-i18n="package_header_1">Базовый</h3>
-          <p data-i18n="package_header_text_1">Свет, базовая автоматика, управление через приложение</p>
+        <div class="hero-img">
+          <img src="/assets/logo/Shanyrak-grey.png" alt="Smart Ui" />
         </div>
-        <div class="card">
-          <h3 data-i18n="package_header_2">Стандарт</h3>
-          <p data-i18n="package_header_text_2">Базовый + голосовое управление через Алису</p>
+      </section>
+
+      <!-- ПРЕИМУЩЕСТВА -->
+      <section class="features">
+        <div class="feature-card">
+          <h3 data-i18n="feature_header_1">Интеграция с Алисой</h3>
+          <p data-i18n="feature_header_text_1">Полное управление голосом для вашего дома</p>
         </div>
-        <div class="card">
-          <h3 data-i18n="package_header_3">Премиум</h3>
-          <p data-i18n="package_header_text_3">Полный умный дом под ключ + поддержка 24/7</p>
+        <div class="feature-card">
+          <h3 data-i18n="feature_header_2">Поддержка 24/7</h3>
+          <p data-i18n="feature_header_text_2">Мы всегда на связи для вашей безопасности</p>
         </div>
+        <div class="feature-card">
+          <h3 data-i18n="feature_header_3">Современные технологии</h3>
+          <p data-i18n="feature_header_text_3">Безопасность, автоматизация и комфорт</p>
+        </div>
+      </section>
+
+      <!-- ПАКЕТЫ -->
+      <section>
+        <h2 data-i18n="package_header" class="package-header">Наши пакеты</h2>
+        <div class="cards">
+          <div class="card">
+            <h3 data-i18n="package_header_1">Базовый</h3>
+            <p data-i18n="package_header_text_1">Свет, базовая автоматика, управление через приложение</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="package_header_2">Стандарт</h3>
+            <p data-i18n="package_header_text_2">Базовый + голосовое управление через Алису</p>
+          </div>
+          <div class="card">
+            <h3 data-i18n="package_header_3">Премиум</h3>
+            <p data-i18n="package_header_text_3">Полный умный дом под ключ + поддержка 24/7</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ФОРМА ЗАЯВКИ (Netlify) -->
+      <section id="form">
+        <h2 data-i18n="form_header">Оставьте заявку</h2>
+        <form name="smartui-form" method="POST" data-netlify="true">
+          <!-- обязательное скрытое поле для Netlify -->
+          <input type="hidden" name="form-name" value="smartui-form" />
+          <input type="text" name="name" placeholder="Ваше имя / Аты-жөні / Name" required />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="+7 777 123 45 67"
+            pattern="^\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}$"
+            required
+            title="Введите полный номер, например +7 777 123 45 67"
+          />
+          <button data-i18n="form_send" type="submit">Отправить</button>
+        </form>
+      </section>
+
+      <!-- КОНТАКТЫ -->
+      <section id="contacts">
+        <div data-i18n="contact_header" class="contact-header">Контакты</div>
+
+        <div data-i18n="contact_address" class="contact-text">г. Алматы, Казахстан</div>
+      </section>
+
+      <!-- ПЛАВАЮЩАЯ КНОПКА -->
+      <div class="floating-contact">
+        <div class="floating-menu">
+          <a href="tel:+77778410050" class="btn-primary">
+            <svg class="icon call" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1v2.9c0 .6-.4 1-1 1C10.3 20.6 3.4 13.7 3.4 5.6c0-.6.4-1 1-1H7.3c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-1.9 1.3z"
+              />
+            </svg>
+            <span data-i18n="floating_call">Позвонить</span>
+          </a>
+
+          <a href="https://t.me/77778410050" target="_blank" class="btn-primary">
+            <svg class="icon telegram" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M9.9 15.6 9.6 19c.4 0 .6-.2.8-.4l1.9-1.8 3.9 2.8c.7.4 1.2.2 1.4-.6l2.6-12.2c.2-.9-.3-1.3-1-1L4.2 9.6c-.8.3-.8.8-.1 1l4.2 1.3L17 6.9c.4-.3.8-.1.5.2z"
+              />
+            </svg>
+            <span data-i18n="telegram">Telegram</span>
+          </a>
+
+          <a href="https://wa.me/77778410050" target="_blank" class="btn-primary">
+            <svg class="icon whatsapp" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2a10 10 0 0 0-8.7 15l-1.1 4.1 4.2-1.1A10 10 0 1 0 12 2zm5.5 14.5c-.2.6-1.2 1.1-1.7 1.1-.5.1-1.1.1-3.6-1.2-3.1-1.6-5-4.4-5.1-4.6-.1-.2-1.2-1.6-1.2-3 0-1.4.7-2.1 1-2.4.3-.3.6-.4.8-.4h.6c.2 0 .5-.1.7.5.2.6.8 2.2.9 2.4.1.2.1.4 0 .6-.1.2-.2.4-.4.6-.2.2-.4.4-.6.6-.2.2-.4.4-.2.8.2.4 1 1.6 2.1 2.6 1.5 1.3 2.8 1.7 3.2 1.9.4.2.6.2.9-.1.3-.3 1-1.2 1.3-1.6.3-.4.6-.3 1-.1.4.2 2.5 1.2 2.9 1.4.4.2.6.3.7.5.1.2.1.6-.1 1.2z"
+              />
+            </svg>
+            <span data-i18n="whatsapp">WhatsApp</span>
+          </a>
+        </div>
+        <div data-i18n="floating_contact_us" class="floating-btn">💬 Связаться</div>
       </div>
-    </section>
-
-    <!-- ФОРМА ЗАЯВКИ (Netlify) -->
-    <section id="form">
-      <h2 data-i18n="form_header">Оставьте заявку</h2>
-      <form name="smartui-form" method="POST" data-netlify="true">
-        <!-- обязательное скрытое поле для Netlify -->
-        <input type="hidden" name="form-name" value="smartui-form" />
-        <input type="text" name="name" placeholder="Ваше имя / Аты-жөні / Name" required />
-        <input
-          type="tel"
-          name="phone"
-          placeholder="+7 777 123 45 67"
-          pattern="^\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}$"
-          required
-          title="Введите полный номер, например +7 777 123 45 67"
-        />
-        <button data-i18n="form_send" type="submit">Отправить</button>
-      </form>
-    </section>
-
-    <!-- КОНТАКТЫ -->
-    <section id="contacts">
-      <div data-i18n="contact_header" class="contact-header">Контакты</div>
-
-      <div data-i18n="contact_address" class="contact-text">г. Алматы, Казахстан</div>
-    </section>
-
-    <!-- ПЛАВАЮЩАЯ КНОПКА -->
-    <div class="floating-contact">
-      <div class="floating-menu">
-        <a href="tel:+77778410050" class="btn-primary">
-          <svg class="icon call" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M6.6 10.8c1.2 2.3 3.1 4.2 5.4 5.4l1.8-1.8c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1v2.9c0 .6-.4 1-1 1C10.3 20.6 3.4 13.7 3.4 5.6c0-.6.4-1 1-1H7.3c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-1.9 1.3z"
-            />
-          </svg>
-          <span data-i18n="floating_call">Позвонить</span>
-        </a>
-
-        <a href="https://t.me/77778410050" target="_blank" class="btn-primary">
-          <svg class="icon telegram" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M9.9 15.6 9.6 19c.4 0 .6-.2.8-.4l1.9-1.8 3.9 2.8c.7.4 1.2.2 1.4-.6l2.6-12.2c.2-.9-.3-1.3-1-1L4.2 9.6c-.8.3-.8.8-.1 1l4.2 1.3L17 6.9c.4-.3.8-.1.5.2z"
-            />
-          </svg>
-          <span data-i18n="telegram">Telegram</span>
-        </a>
-
-        <a href="https://wa.me/77778410050" target="_blank" class="btn-primary">
-          <svg class="icon whatsapp" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M12 2a10 10 0 0 0-8.7 15l-1.1 4.1 4.2-1.1A10 10 0 1 0 12 2zm5.5 14.5c-.2.6-1.2 1.1-1.7 1.1-.5.1-1.1.1-3.6-1.2-3.1-1.6-5-4.4-5.1-4.6-.1-.2-1.2-1.6-1.2-3 0-1.4.7-2.1 1-2.4.3-.3.6-.4.8-.4h.6c.2 0 .5-.1.7.5.2.6.8 2.2.9 2.4.1.2.1.4 0 .6-.1.2-.2.4-.4.6-.2.2-.4.4-.6.6-.2.2-.4.4-.2.8.2.4 1 1.6 2.1 2.6 1.5 1.3 2.8 1.7 3.2 1.9.4.2.6.2.9-.1.3-.3 1-1.2 1.3-1.6.3-.4.6-.3 1-.1.4.2 2.5 1.2 2.9 1.4.4.2.6.3.7.5.1.2.1.6-.1 1.2z"
-            />
-          </svg>
-          <span data-i18n="whatsapp">WhatsApp</span>
-        </a>
-      </div>
-      <div data-i18n="floating_contact_us" class="floating-btn">💬 Связаться</div>
     </div>
   </body>
 </html>
