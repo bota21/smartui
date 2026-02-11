@@ -15,7 +15,7 @@ $(document).ready(function () {
     if (!burger.contains(e.target) && !menu.contains(e.target)) {
       burger.classList.remove("active");
       menu.classList.remove("active");
-      content.classList.toggle("main_content_hide");
+      content.classList.remove("main_content_hide");
     }
   });
 
